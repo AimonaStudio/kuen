@@ -1,0 +1,48 @@
+{
+  "name": "bff",
+  "version": "0.0.1",
+  "description": "Bread's Frontend Framework",
+  "main": "src/index.ts",
+  "scripts": {
+    "eslint": "eslint src --ext .ts,.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Himself65/bff.git"
+  },
+  "keywords": [
+    "Vue"
+  ],
+  "author": {
+    "name": "Himself65",
+    "email": "Himself6565@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Himself65/bff/issues"
+  },
+  "homepage": "https://github.com/Himself65/bff#README.md",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-typescript": "^0.12.0",
+    "tslint": "^5.11.0",
+    "tslint-config-alloy": "^0.1.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.1.1",
+    "typescript-eslint-parser": "^19.0.1",
+    "typestrict": "^1.0.1",
+    "vue": "^2.5.17"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.10"
+  }
+}
