@@ -4,15 +4,16 @@
 
 <script>
 export default {
-  name: 'Card',
+  name: 'BCard',
   computed: {
     classes () {
-      return []
+      return ['b-card']
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-
+  .b-card {
+  }
 </style>

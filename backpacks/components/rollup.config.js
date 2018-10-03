@@ -1,6 +1,5 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
-import typescript from 'rollup-plugin-typescript'
 import commonjs from 'rollup-plugin-commonjs'
 import vue from 'rollup-plugin-vue'
 import pkg from './package.json'
@@ -17,26 +16,7 @@ function parseNodeEnv (nodeEnv) {
 
 const nodeEnv = parseNodeEnv(process.env.NODE_ENV)
 
-const bffPlugins = [
-  resolve({
-    jsnext: true
-  }),
-  commonjs({
-    jail: './src',
-    only: 'node_modules/**'
-  }),
-  vue(),
-  typescript(),
-  babel({
-    exclude: 'node_modules/**',
-    runtimeHelpers: true
-  })
-]
-const otherConfig = {}
-
-let devRollup = {}
-
-let prodRollup = {
+export default {
   input: pkg.source,
   output: [
     { file: pkg.main, format: 'cjs', sourcemap: true },
@@ -47,24 +27,23 @@ let prodRollup = {
     'babel-runtime',
     'lodash'
   ].some(s => id.includes(s)),
-  plugins: bffPlugins,
-  ...otherConfig
+  plugins: [
+    resolve({
+      jsnext: true,
+      main: true,
+      browser: true
+    }),
+    commonjs(),
+    vue(),
+    babel({
+      exclude: 'node_modules/**',
+      runtimeHelpers: true,
+      plugins: [
+        'external-helpers'
+      ]
+    })
+  ],
+  watch: {
+    include: 'src/**'
+  }
 }
-
-let exports = [
-  prodRollup
-]
-
-if (nodeEnv === prod) {
-  bffPlugins.push(
-    // FIXME:  (terser plugin) Error: Farm is ended, no more calls can be done to it
-    // terser({
-    //   toplevel: false,
-    //   output: {
-    //     beautify: false
-    //   }
-    // }) // minify generated bundle
-  )
-}
-
-export default exports

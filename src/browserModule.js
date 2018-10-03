@@ -1,1 +1,1 @@
-export { default } from './App.vue'
+export { default } from './dev/App.vue'

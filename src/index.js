@@ -1,7 +1,7 @@
-import Card from './card'
+import { BCard } from '../backpacks/components/src'
 
 const components = {
-  Card: Card
+  BCard: BCard
 }
 
 const bff = {
