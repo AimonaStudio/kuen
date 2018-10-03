@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Fuck</h1>
+    <h1>Enjoy Coding Life!</h1>
   </div>
 </template>
 

@@ -1,10 +1,7 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import typescript from 'rollup-plugin-typescript'
-// import serve from 'rollup-plugin-serve'
 import commonjs from 'rollup-plugin-commonjs'
-// import { uglify } from 'rollup-plugin-uglify'
-// import { terser } from 'rollup-plugin-terser'
 import vue from 'rollup-plugin-vue'
 import pkg from './package.json'
 
@@ -19,8 +16,6 @@ function parseNodeEnv (nodeEnv) {
 }
 
 const nodeEnv = parseNodeEnv(process.env.NODE_ENV)
-const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3005
 
 const bffPlugins = [
   resolve({
@@ -59,37 +54,6 @@ let prodRollup = {
 let exports = [
   prodRollup
 ]
-
-// MARK: Use Vue-cli
-// if (nodeEnv === dev) {
-//   devRollup = {
-//     input: './dev/module.js',
-//     output: [
-//       { file: './dist/main.js', format: 'iife', sourcemap: true }
-//     ],
-//     plugins: [
-//       ...bffPlugins,
-//       serve({
-//         contentBase: ['./dist', './dev'],
-//         publicPath: '/dev/',
-//         host: host,
-//         port: port,
-//         historyApiFallback: true,
-//         open: true,
-//         headers: {
-//           'Access-Control-Allow-Origin': '*'
-//         }
-//       })
-//     ],
-//     watch: {
-//       include: './dev/**'
-//     }
-//   }
-//   otherConfig['watch'] = {
-//     include: './src/**'
-//   }
-//   exports.push(devRollup)
-// }
 
 if (nodeEnv === prod) {
   bffPlugins.push(
