@@ -39,9 +39,6 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-vue": "^4.3.2",
-    "tslint": "^5.11.0",
-    "tslint-config-alloy": "^0.1.0",
-    "tslint-config-standard": "^8.0.1",
     "vue": "^2.5.17"
   },
   "peerDependencies": {

@@ -9,9 +9,6 @@
     "standard",
     "plugin:vue/recommended"
   ],
-  "plugins": [
-    "typescript"
-  ],
   "rules": {
     "eqeqeq": [
       "error",
@@ -20,7 +17,6 @@
         "null": "ignore"
       }
     ],
-    "typescript/class-name-casing": "error",
     "no-unused-vars": "warn",
     "vue/max-attributes-per-line": ["error", {
       "singleline": 3,
