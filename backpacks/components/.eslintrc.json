@@ -1,16 +1,13 @@
 {
   "root": false,
   "parserOptions": {
-    "parser": "typescript-eslint-parser",
+    "parser": "babel-eslint",
     "ecmaVersion": 2017,
     "sourceType": "module"
   },
   "extends": [
     "standard",
     "plugin:vue/recommended"
-  ],
-  "plugins": [
-    "typescript"
   ],
   "rules": {
     "eqeqeq": [
@@ -20,7 +17,6 @@
         "null": "ignore"
       }
     ],
-    "typescript/class-name-casing": "error",
     "no-unused-vars": "warn",
     "vue/max-attributes-per-line": ["error", {
       "singleline": 3,
