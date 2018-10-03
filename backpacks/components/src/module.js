@@ -23,4 +23,5 @@ const API = {
   install: install,
   ...components
 }
+
 module.exports.default = module.exports = API
