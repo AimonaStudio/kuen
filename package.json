@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Bread's Frontend Framework",
   "scripts": {
-    "eslint": "eslint src --ext .ts,.js",
-    "lint": "stylelint \"./**/*.vue\" --fix",
+    "lint": "eslint src --ext .ts,.js",
     "dev": "vue-cli-service serve --open"
   },
   "repository": {
