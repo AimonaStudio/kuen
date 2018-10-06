@@ -6,6 +6,14 @@ import router from './dev/router'
 
 Vue.use(VueRouter)
 
+const components = require('../backpacks/components/src/index')
+
+// Registration
+for (const key in components) {
+  const component = components[key]
+  Vue.component(key, component)
+}
+
 Vue.config.productionTip = false
 
 const vm = new Vue({
@@ -17,4 +25,5 @@ const vm = new Vue({
 // Prevent layout jump while waiting for styles
 vm.isLoaded || window.addEventListener('load', () => {
   vm.isLoaded = true
+  console.log('BFF DEV LOADED')
 })
