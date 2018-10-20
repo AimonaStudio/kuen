@@ -1,5 +1,5 @@
 <template>
-  <div class="b-card">
+  <div :class="classes" :style="styles">
     <div v-if="this.$slots.header" class="header">
       <slot name="header" />
     </div>
@@ -13,13 +13,29 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    width: { type: Number, default: 320 }
+  },
+  computed: {
+    classes () {
+      return {
+        'b-card': true
+      }
+    },
+    styles () {
+      return {
+        'width': `${this.width}px`
+      }
+    }
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
   @import "../../../../stylus/_settings.styl"
 
-  .b-card
+  .b-card {
     display flex
     flex-direction column
     flex-wrap nowrap
@@ -27,8 +43,9 @@ export default {}
     margin 0 16px 0 16px
     border 1px solid rgba(0, 0, 0, .125)
     border-radius .25rem
+  }
 
-  .b-card > .header
+  .b-card > .header {
     display flex
     flex-direction row
     flex-wrap nowrap
@@ -36,11 +53,16 @@ export default {}
     padding: 16px 20px 16px 20px
     background-color rgba(0, 0, 0, .03)
     border-bottom 1px solid rgba(0, 0, 0, .125)
+  }
 
-  .b-card > .body
+  .b-card > .body {
     padding 20px
+    text-align: left
+  }
 
-  @media $display-breakpoints.xs-only
-    .b-card
+  @media $display-breakpoints.xs-only{
+    .b-card {
       margin: 0
+    }
+  }
 </style>
