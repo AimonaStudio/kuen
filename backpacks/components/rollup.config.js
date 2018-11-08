@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
+import stylus from 'rollup-plugin-stylus'
 import vue from 'rollup-plugin-vue'
 import pkg from './package.json'
 
@@ -34,6 +35,7 @@ export default {
       browser: true
     }),
     commonjs(),
+    stylus(),
     vue(),
     babel({
       exclude: 'node_modules/**',

@@ -7,5 +7,6 @@
       }
     ],
     "stage-3"
-  ]
+  ],
+  "plugins": ["transform-object-rest-spread"]
 }

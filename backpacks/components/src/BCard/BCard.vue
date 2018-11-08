@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import "../../../../stylus/_settings.styl"
+  @import "../stylus/settings/_variables.styl"
 
   .b-card {
     display flex

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Himself65/bff#README.md",
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@types/node": "^10.11.3",
     "@types/vue": "^2.0.0",
     "@vue/cli-plugin-babel": "^3.0.4",
