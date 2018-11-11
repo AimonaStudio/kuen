@@ -21,7 +21,17 @@ export default {
     },
 
     setTextColor (color, data) {
-      // TODO
+      if (isCssColor(color)) {
+        data['color'] = `${color}`
+        data['caret-color'] = `${color}`
+      } else if (color) {
+        const [colorName, colorModifier] = color.toString().trim().split(' ', 2)
+        data[`${colorName}--text`] = true
+        if (colorModifier) {
+          data.class[`text--${colorModifier}`] = true
+        }
+      }
+      return data
     }
   }
 }
