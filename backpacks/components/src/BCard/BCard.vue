@@ -13,10 +13,13 @@
 </template>
 
 <script>
+import { convertToUnit } from '../utils/helpers'
 export default {
+
   props: {
     width: { type: Number, default: 320 }
   },
+
   computed: {
     classes () {
       return {
@@ -25,7 +28,7 @@ export default {
     },
     styles () {
       return {
-        'width': `${this.width}px`
+        'width': convertToUnit(this.width)
       }
     }
   }

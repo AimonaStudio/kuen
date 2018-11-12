@@ -6,3 +6,4 @@ export {
   default as BProgress,
   BProgressLinear
 } from './BProgress'
+export { default as BTag } from './BTag'
