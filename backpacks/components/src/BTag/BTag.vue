@@ -1,10 +1,12 @@
 <template>
-  <div :class="classes" />
+  <div :class="classes" :style="styles" />
 </template>
 
 <script>
-import Colorable from '../mixins/colorable'
 import { convertToUnit } from '../utils/helpers'
+
+// mixins
+import Colorable from '../mixins/colorable'
 
 export default {
   name: 'BTag',

@@ -14,17 +14,26 @@
 
 <script>
 import { convertToUnit } from '../utils/helpers'
+
+// mixins
+import Colorable from '../mixins/colorable'
+
 export default {
 
+  mixins: [Colorable],
+
   props: {
-    width: { type: Number, default: 320 }
+    width: { type: Number, default: 320 },
+    backgroundColor: { type: String | Number, default: undefined }
   },
 
   computed: {
     classes () {
-      return {
+      const classes = this.setBackgroundColor(this.backgroundColor, {
         'b-card': true
-      }
+      })
+
+      return classes
     },
     styles () {
       return {

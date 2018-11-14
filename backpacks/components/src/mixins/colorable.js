@@ -12,23 +12,35 @@ export default {
   methods: {
     setBackgroundColor (color, data) {
       if (isCssColor(color)) {
-        data['background-color'] = `${color}`
-        data['border-color'] = `${color}`
+        data = {
+          ...data,
+          'background-color': `${color}`,
+          'border-color': `${color}`
+        }
       } else {
-        data[color] = true
+        data = {
+          ...data,
+          [color]: true
+        }
       }
       return data
     },
 
     setTextColor (color, data) {
       if (isCssColor(color)) {
-        data['color'] = `${color}`
-        data['caret-color'] = `${color}`
+        data = {
+          ...data,
+          'color': `${color}`,
+          'caret-color': `${color}`
+        }
       } else if (color) {
         const [colorName, colorModifier] = color.toString().trim().split(' ', 2)
-        data[`${colorName}--text`] = true
+        data = {
+          ...data,
+          [`${colorName}--text`]: true
+        }
         if (colorModifier) {
-          data.class[`text--${colorModifier}`] = true
+          data[`text--${colorModifier}`] = true
         }
       }
       return data
