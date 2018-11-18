@@ -1,0 +1,9 @@
+@import "../settings/_theme.styl"
+
+create-component-theme($component, $name, $theme-name, $theme-template)
+  .theme--{$theme-name}.{$name}
+    $component($theme-template)
+
+theme($component, $name)
+  for $theme-name, $theme-template in $theme
+    create-component-theme($component, $name, $theme-name, $theme-template)
