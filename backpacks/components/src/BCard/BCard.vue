@@ -7,8 +7,12 @@
     >
       <slot name="header" />
     </div>
-    <div class="b-card--body"><slot /></div>
-    <div v-if="this.$slots.footer" class="b-card--footer"><slot name="footer" /></div>
+    <div class="b-card--body">
+      <slot />
+    </div>
+    <div v-if="this.$slots.footer" class="b-card--footer">
+      <slot name="footer" />
+    </div>
   </div>
 </template>
 
@@ -63,7 +67,6 @@ export default {
 <style lang="stylus" scoped>
   @import "../../../stylus/settings/_variables.styl"
   @import "../../../stylus/settings/_elevations.styl"
-  $b-card-border-radius = .25rem
 
   .b-card {
     display flex
@@ -71,7 +74,7 @@ export default {
     flex-wrap nowrap
     padding 0
     margin 0 16px 0 16px
-    border-radius $b-card-border-radius
+    border-radius $border-radius-default
     text-align left
     elevation(1)
 
@@ -79,24 +82,40 @@ export default {
       border-radius 0
     }
 
-  .b-card > .header {
-    display flex
-    flex-direction row
-    flex-wrap nowrap
-    align-items center
-    padding: 16px 20px 16px 20px
-    background-color rgba(0, 0, 0, .03)
-    border-bottom 1px solid rgba(0, 0, 0, .125)
-  }
+    &--header {
+      display flex
+      flex-direction row
+      flex-wrap nowrap
+      align-items center
+      padding 16px 20px 16px 20px
+      background-color rgba(0, 0, 0, .03)
+      border 0
 
-  .b-card > .body {
-    padding 20px
-    text-align: left
-  }
+      &--media {
+        padding 0
+        border-radius $border-radius-default
+        margin 0
+        img {
+          border-top-right-radius $border-radius-default
+          border-top-left-radius $border-radius-default
+          display inline-block
+          height auto
+          max-width 100%
+        }
+      }
+    }
 
-  @media $display-breakpoints.xs-only{
-    .b-card {
-      margin: 0
+    &--footer {
+      padding 16px 20px 16px 20px
+    }
+
+    &--body {
+      padding 20px
+      text-align left
+    }
+
+    @media $display-breakpoints.xs-only {
+      margin 0
     }
   }
 </style>
