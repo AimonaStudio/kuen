@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import '../backpacks/components/src/stylus/app.styl'
-import App from './dev/App.vue'
+import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import router from './dev/router'
+import router from './router'
 
 Vue.use(VueRouter)
 
