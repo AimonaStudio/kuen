@@ -61,8 +61,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import "../stylus/settings/_variables.styl"
-  @import "../stylus/settings/_elevations.styl"
+  @import "../../../stylus/settings/_variables.styl"
+  @import "../../../stylus/settings/_elevations.styl"
   $b-card-border-radius = .25rem
 
   .b-card {

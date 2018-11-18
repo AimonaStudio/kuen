@@ -9,12 +9,15 @@ export function convertToUnit (str, unit = 'px') {
     return `${Number(str)}${unit}`
   }
 }
+
+const mediaElementTag = ['img', 'video']
+
 export function isMediaElement (VNode) {
   if (!VNode) {
     return false
-  } else if (isArray(VNode)) {
-    return VNode[0].tag === 'img'
+  } else if (isArray(VNode) && VNode.length === 1) {
+    return mediaElementTag.indexOf(VNode[0].tag) !== -1
   } else {
-    return VNode.tag === 'img' // todo
+    return mediaElementTag.indexOf(VNode.tag) !== -1 // todo
   }
 }
