@@ -6,11 +6,11 @@ export default {
   name: 'colorable',
 
   props: {
-    color: { type: String, required: true }
+    color: { type: String, default: undefined }
   },
 
   methods: {
-    setBackgroundColor (color, data) {
+    setBackgroundColor (color, data = {}) {
       if (isCssColor(color)) {
         data = {
           ...data,
