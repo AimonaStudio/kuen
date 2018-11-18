@@ -17,14 +17,17 @@
 </template>
 
 <script>
+// helpers
 import { convertToUnit, isMediaElement } from '../utils/helpers'
+
 // mixins
 import Colorable from '../mixins/colorable'
+import Themeable from '../mixins/themeable'
 
 export default {
   name: 'BCard',
 
-  mixins: [Colorable],
+  mixins: [Colorable, Themeable],
 
   props: {
     width: { type: Number, default: 320 },
@@ -35,6 +38,7 @@ export default {
   computed: {
     classes () {
       const classes = {
+        ...this.themeClasses,
         'b-card': true,
         'b-card--tile': this.tile
       }
@@ -54,10 +58,6 @@ export default {
     }
   },
 
-  mounted () {
-    console.log(this.$slots)
-  },
-
   methods: {
     isMediaElement
   }
@@ -67,6 +67,9 @@ export default {
 <style lang="stylus" scoped>
   @import "../../../stylus/settings/_variables.styl"
   @import "../../../stylus/settings/_elevations.styl"
+
+  // local
+  @import "./BCard.styl"
 
   .b-card {
     display flex
