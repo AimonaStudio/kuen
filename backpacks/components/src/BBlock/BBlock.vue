@@ -24,19 +24,20 @@ export default {
   },
   computed: {
     classes () {
-      const classes = {
+      const classes = this.setBackgroundColor(this.color, {
         'b-block': true,
-        'disabled': this.disabled,
+        'b-block--disabled': this.disabled,
         'status': true // todo: merge status color to common colors like 'light', 'dark' .etc
-      }
+      })
       this.setBackgroundColor(this.color, classes)
       return classes
     },
     styles () {
-      const style = {
+      const style = this.setBackgroundColor(this.color, {
         'height': convertToUnit(this.size),
         'width': convertToUnit(this.size)
-      }
+      })
+
       return style
     }
   }
@@ -51,7 +52,7 @@ export default {
     flex-direction: column
     justify-content: center
     color: $white
-    .disabled {
+    &--disabled {
       opacity: 0.65;
       cursor: not-allowed;
     }

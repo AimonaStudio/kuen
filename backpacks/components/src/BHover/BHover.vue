@@ -1,14 +1,14 @@
 <!-- todo -->
 <template>
-  <button />
+  <div />
 </template>
 
 <script>
 export default {
-  name: 'BButton'
+  name: 'BHover'
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 
 </style>
