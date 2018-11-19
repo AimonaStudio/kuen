@@ -4,7 +4,7 @@ BFF (is short for Bread's Frontend Framework) is a useful and beautiful library.
 
 ## Feature
 
-There have three parts of `bff`
+There have three main parts of `bff`
 
 - `Component`: the core part of `bff`.
 
@@ -15,11 +15,7 @@ There have three parts of `bff`
 ## Installation
 
 ```bash
-yarn add bff
-
-# or
-
-npm install bff
+yarn add --dev bff
 ```
 
 ## Usage
