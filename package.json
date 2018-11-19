@@ -4,7 +4,9 @@
   "description": "Bread's Frontend Framework",
   "scripts": {
     "lint": "eslint src --ext .ts,.js",
-    "dev": "vue-cli-service serve --open"
+    "dev": "vue-cli-service serve --open",
+    "docs:dev": "vuepress dev docs --port 3005",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -45,7 +47,8 @@
     "typescript": "^3.1.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vuepress": "^0.14.5"
   },
   "peerDependencies": {
     "vue": "^2.5.10"
