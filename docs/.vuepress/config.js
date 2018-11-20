@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/bff/',
-  title: 'BFF',
+  base: '/kuen/',
+  title: 'KUEN',
   description: 'A useful, beautiful frontend framework.'
 }

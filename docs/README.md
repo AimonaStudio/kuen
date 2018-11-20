@@ -13,8 +13,8 @@ yarn add --dev bff
 
 ```javascript
 import Vue from 'vue'
-import Bff from 'bff'
+import Kuen from 'kuen'
 
-Vue.use(Bff)
+Vue.use(Kuen)
 ```
 

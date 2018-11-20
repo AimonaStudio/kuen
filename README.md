@@ -1,6 +1,6 @@
 # KUEN - A Frontend Framework
 
-KUEN (is short for Bread's Frontend Framework) is a useful and beautiful library.
+KUEN is a useful and beautiful library.
 
 ## Feature
 
