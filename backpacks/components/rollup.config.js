@@ -24,7 +24,7 @@ export default {
     { file: pkg.module, format: 'es', sourcemap: true }
   ],
   external: id => [
-    '@bff',
+    '@kuen',
     'babel-runtime',
     'lodash'
   ].some(s => id.includes(s)),

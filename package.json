@@ -1,5 +1,5 @@
 {
-  "name": "bff",
+  "name": "kuen",
   "version": "0.0.1",
   "description": "Bread's Frontend Framework",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Himself65/bff.git"
+    "url": "https://github.com/Himself65/kuen.git"
   },
   "author": {
     "name": "Himself65",
@@ -18,9 +18,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Himself65/bff/issues"
+    "url": "https://github.com/Himself65/kuen/issues"
   },
-  "homepage": "https://github.com/Himself65/bff#README.md",
+  "homepage": "https://github.com/Himself65/kuen#README.md",
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@types/node": "^10.11.3",

@@ -1,9 +1,9 @@
 {
-  "name": "@bff/components",
+  "name": "@kuen/components",
   "version": "0.0.1",
   "source": "src/index.js",
-  "main": "dist/bff.cjs.js",
-  "module": "dist/bff.esm.js",
+  "main": "dist/kuen.cjs.js",
+  "module": "dist/kuen.esm.js",
   "license": "MIT",
   "author": {
     "name": "Himself65",

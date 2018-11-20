@@ -1,3 +1,5 @@
+@import "../../../stylus/settings/_variables.styl"
+@import "../../../stylus/settings/_elevations.styl"
 @import "../../../stylus/generic/_theme.styl"
 
 b-card($template)
@@ -6,3 +8,54 @@ b-card($template)
   color: $template.text.primary
 
 theme(b-card, "b-card")
+
+.b-card {
+  display flex
+  flex-direction column
+  flex-wrap nowrap
+  padding 0
+  margin 0 16px 0 16px
+  border-radius $border-radius-default
+  text-align left
+  elevation(1)
+
+  &--tile {
+    border-radius 0
+  }
+
+  &--header {
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    align-items center
+    padding 16px 20px 16px 20px
+    background-color rgba(0, 0, 0, .03)
+    border 0
+
+    &--media {
+      padding 0
+      border-radius $border-radius-default
+      margin 0
+      img {
+        border-top-right-radius $border-radius-default
+        border-top-left-radius $border-radius-default
+        display inline-block
+        height auto
+        max-width 100%
+      }
+    }
+  }
+
+  &--footer {
+    padding 16px 20px 16px 20px
+  }
+
+  &--body {
+    padding 20px
+    text-align left
+  }
+
+  @media $display-breakpoints.xs-only {
+    margin 0
+  }
+}
