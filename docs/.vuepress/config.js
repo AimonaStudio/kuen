@@ -1,5 +1,10 @@
 module.exports = {
-  base: '/bff/',
-  title: 'BFF',
-  description: 'A useful, beautiful frontend framework.'
+  base: '/kuen/',
+  title: 'KUEN',
+  description: 'A useful, beautiful frontend framework.',
+  themeConfig: {
+    nav: [
+      { text: 'Github', link: 'https://github.com/himself65/kuen' },
+    ]
+  }
 }

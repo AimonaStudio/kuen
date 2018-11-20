@@ -8,13 +8,13 @@ footer: MIT Licensed | Copyright © 2018-present Himself65
 
 ```bash
 # install
-yarn add --dev bff
+yarn add --dev kuen
 ```
 
 ```javascript
 import Vue from 'vue'
-import Bff from 'bff'
+import Kuen from 'kuen'
 
-Vue.use(Bff)
+Vue.use(Kuen)
 ```
 

@@ -15,3 +15,5 @@ git commit -m 'deploy'
 git push -f git@github.com:himself65/bff.git master:gh-pages
 
 cd -
+
+rm -rf docs/.vuepress/dist

@@ -1,13 +1,12 @@
 {
   "name": "@kuen/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "source": "src/index.js",
   "main": "dist/kuen.cjs.js",
   "module": "dist/kuen.esm.js",
   "license": "MIT",
-  "author": {
-    "name": "Himself65",
-    "email": "Himself6565@gmail.com"
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "eslint": "eslint src --ext .ts,.js,.vue",

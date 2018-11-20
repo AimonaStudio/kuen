@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import '../backpacks/stylus/app.styl'
+import '../backpacks/components/src/stylus/app.styl'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
