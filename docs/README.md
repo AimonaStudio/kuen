@@ -8,7 +8,7 @@ footer: MIT Licensed | Copyright © 2018-present Himself65
 
 ```bash
 # install
-yarn add --dev bff
+yarn add --dev kuen
 ```
 
 ```javascript
