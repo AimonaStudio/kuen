@@ -53,7 +53,7 @@ export default {
         return false
       } else {
         // todo: add root component
-        return this.$bff.dark
+        return this.$kuen.dark
       }
     },
     rootThemeClasses () {

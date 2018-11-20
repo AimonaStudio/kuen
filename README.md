@@ -1,34 +1,30 @@
-# BFF - A Frontend Framework
+# KUEN - A Frontend Framework
 
-BFF (is short for Bread's Frontend Framework) is a useful and beautiful library.
+KUEN (is short for Bread's Frontend Framework) is a useful and beautiful library.
 
 ## Feature
 
-There have three parts of `bff`
+There have three parts of `kuen`
 
-- `Component`: the core part of `bff`.
+- `component`: the core part of `kuen`.
 
-- `Loader`: Developed by `vue`, but more suitable for web development.
+- `loader`: extend `vue`.
 
-- `Util`: function library.
+- `util`: function library.
 
 ## Installation
 
 ```bash
-yarn add bff
-
-# or
-
-npm install bff
+yarn add kuen
 ```
 
 ## Usage
 
 ```javascript
 import Vue from 'vue'
-import Bff from 'bff'
+import Kuen from 'kuen'
 
-Vue.use(Bff)
+Vue.use(Kuen)
 ```
 
 
