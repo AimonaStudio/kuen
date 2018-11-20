@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import "../../../stylus/settings/_colors.styl"
+  @import "../stylus/settings/_colors.styl"
 
   .b-block {
     display: flex

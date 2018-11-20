@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="stylus">
-  @import "../backpacks/stylus/settings/_theme.styl"
+  @import "../backpacks/components/src/stylus/settings/_theme.styl"
 
   #app {
     font-family $font-size-default
