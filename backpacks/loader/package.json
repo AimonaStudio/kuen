@@ -1,0 +1,47 @@
+{
+  "name": "@kuen/loader",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/kuen.cjs.js",
+  "module": "dist/kuen.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "eslint": "eslint src --ext .ts,.js,.vue",
+    "build": "rimraf dist && cross-env NODE_ENV=production rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Himself65/kuen.git"
+  },
+  "author": {
+    "name": "Himself65",
+    "email": "Himself6565@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Himself65/kuen/issues"
+  },
+  "homepage": "https://himself65.github.io/kuen",
+  "devDependencies": {
+    "@kuen/components": "^0.0.3",
+    "@types/node": "^10.11.3",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "lodash": "^4.17.11",
+    "rimraf": "^2.6.2",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.10"
+  }
+}
