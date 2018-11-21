@@ -25,8 +25,13 @@
     "url": "https://github.com/Himself65/kuen/issues"
   },
   "homepage": "https://himself65.github.io/kuen",
-  "devDependencies": {
+  "dependencies": {
     "@kuen/components": "^0.0.3",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
     "@types/node": "^10.11.3",
     "cross-env": "^5.2.0",
     "eslint": "^5.6.1",
@@ -37,11 +42,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "lodash": "^4.17.11",
-    "rimraf": "^2.6.2",
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
-  },
-  "peerDependencies": {
-    "vue": "^2.5.10"
+    "rimraf": "^2.6.2"
   }
 }

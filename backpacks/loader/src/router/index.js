@@ -1,4 +1,11 @@
+// eslint-disable-next-line
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-export default VueRouter
+Vue.use(VueRouter)
+
+const initRoute = async () => {
+  // todo
+}
+
+export { initRoute }
