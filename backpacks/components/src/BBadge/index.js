@@ -1,3 +1,3 @@
-import BBadge from './BBadge'
+import BBadge from './BBadge.vue'
 
 export default BBadge

@@ -1,3 +1,3 @@
-import BButton from './BButton'
+import BButton from './BButton.vue'
 
 export default BButton

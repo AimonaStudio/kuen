@@ -1,3 +1,3 @@
-import BBlock from './BBlock'
+import BBlock from './BBlock.vue'
 
 export default BBlock

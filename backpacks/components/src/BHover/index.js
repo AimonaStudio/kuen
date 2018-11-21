@@ -1,3 +1,3 @@
-import BShadow from './index'
+import BHover from './BHover.vue'
 
-export default BShadow
+export default BHover

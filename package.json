@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Himself65/kuen/issues"
   },
-  "homepage": "https://github.com/Himself65/kuen#README.md",
+  "homepage": "https://himself65.github.io/kuen",
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@types/node": "^10.11.3",

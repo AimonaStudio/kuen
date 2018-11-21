@@ -1,6 +1,6 @@
 {
-  "name": "@kuen/components",
-  "version": "0.0.3",
+  "name": "@kuen/loader",
+  "version": "0.0.1",
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.cjs.js",
@@ -25,17 +25,14 @@
     "url": "https://github.com/Himself65/kuen/issues"
   },
   "homepage": "https://himself65.github.io/kuen",
+  "dependencies": {
+    "@kuen/components": "^0.0.3",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
   "devDependencies": {
     "@types/node": "^10.11.3",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-macros": "^2.4.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-modern-browsers": "^12.0.0",
-    "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.2.0",
     "eslint": "^5.6.1",
     "eslint-config-standard": "^12.0.0",
@@ -45,17 +42,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "lodash": "^4.17.11",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.66.2",
-    "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "^9.1.8",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-replace": "^2.0.0",
-    "rollup-plugin-stylus": "^1.0.4",
-    "rollup-plugin-vue": "^4.3.2",
-    "vue": "^2.5.17"
-  },
-  "peerDependencies": {
-    "vue": "^2.5.10"
+    "rimraf": "^2.6.2"
   }
 }

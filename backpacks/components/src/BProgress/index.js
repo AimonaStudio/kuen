@@ -1,5 +1,5 @@
-import BProgressLinear from './BProgressLinear'
-import BProgress from './BProgress'
+import BProgressLinear from './BProgressLinear.vue'
+import BProgress from './BProgress.vue'
 
 export { BProgressLinear }
 export default BProgress

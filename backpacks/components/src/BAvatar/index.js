@@ -1,3 +1,3 @@
-import BAvatar from './BAvatar'
+import BAvatar from './BAvatar.vue'
 
 export default BAvatar
