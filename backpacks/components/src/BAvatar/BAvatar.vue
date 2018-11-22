@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="classes" :style="styles">
     <div />
   </div>
 </template>
