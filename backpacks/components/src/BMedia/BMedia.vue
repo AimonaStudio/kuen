@@ -1,10 +1,13 @@
 <template>
-  <div />
+  <div :class="classes" :style="styles" />
 </template>
 
 <script>
 export default {
   name: 'BMedia',
+  props: {
+    type: { type: String, required: true }
+  },
   computed: {
     classes () {
       return {
@@ -12,14 +15,10 @@ export default {
       }
     },
     styles () {
-      return {
-
-      }
+      return {}
     }
   }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style lang="stylus" src="./BMedia.styl"></style>

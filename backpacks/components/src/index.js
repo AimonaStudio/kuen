@@ -1,16 +1,50 @@
-export { default as BAvatar } from './BAvatar'
-export { default as BBadge } from './BBadge'
-export { default as BBlock } from './BBlock'
-export { default as BButton } from './BButton'
-export { default as BCard } from './BCard'
-export { default as BHover } from './BHover'
-export {
-  default as BMedia,
+import BAvatar from './BAvatar'
+import BBadge from './BBadge'
+import BBlock from './BBlock'
+import BButton from './BButton'
+import BCard from './BCard'
+import BHover from './BHover'
+import {
+  BMedia,
   BImage,
   BVideo
 } from './BMedia'
-export {
-  default as BProgress,
+import {
+  BProgress,
   BProgressLinear
 } from './BProgress'
-export { default as BTag } from './BTag'
+import BTag from './BTag'
+
+const components = {
+  BAvatar,
+  BBadge,
+  BBlock,
+  BButton,
+  BCard,
+  BHover,
+  BMedia,
+  BImage,
+  BVideo,
+  BProgress,
+  BProgressLinear,
+  BTag
+}
+
+const Kuen = {
+  install: (Vue, args) => {
+    for (const key in components) {
+      const component = components[key]
+      Vue.component(key, component)
+    }
+    Vue.use({
+      ...args
+    })
+  }
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(Kuen)
+}
+
+export default Kuen
+export { Kuen, components }

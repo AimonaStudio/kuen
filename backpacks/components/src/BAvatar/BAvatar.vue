@@ -10,6 +10,7 @@ import { convertToUnit } from '../utils/helpers'
 import Colorable from '../mixins/colorable'
 
 export default {
+  name: 'BAvatar',
   mixins: [Colorable],
 
   props: {

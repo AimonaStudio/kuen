@@ -8,7 +8,7 @@ export default {
   computed: {
     classes () {
       return {
-
+        'b-video': true
       }
     },
     styles () {
