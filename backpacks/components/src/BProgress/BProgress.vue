@@ -4,7 +4,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'BProgress'
+}
 </script>
 
 <style lang="stylus" scoped>

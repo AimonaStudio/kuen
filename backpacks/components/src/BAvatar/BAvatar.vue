@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="classes" :style="styles">
     <div />
   </div>
 </template>
@@ -10,6 +10,7 @@ import { convertToUnit } from '../utils/helpers'
 import Colorable from '../mixins/colorable'
 
 export default {
+  name: 'BAvatar',
   mixins: [Colorable],
 
   props: {
