@@ -9,8 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "eslint": "eslint src --ext .ts,.js,.vue",
-    "build": "rimraf dist && cross-env NODE_ENV=production rollup -c"
+    "eslint": "eslint src --ext .ts,.js,.vue"
   },
   "repository": {
     "type": "git",
