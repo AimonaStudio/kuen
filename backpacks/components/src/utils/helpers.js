@@ -10,7 +10,7 @@ export function convertToUnit (str, unit = 'px') {
   }
 }
 
-const mediaElementTag = ['img', 'video']
+const mediaElementTag = ['img', 'video', 'b-video', 'b-image', 'b-media']
 
 export function isMediaElement (VNode) {
   if (!VNode) {
