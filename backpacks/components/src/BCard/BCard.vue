@@ -1,21 +1,3 @@
-<template>
-  <!-- fixme: background-color -->
-  <div :class="[classes, setBackgroundColor(backgroundColor)]" :style="styles">
-    <div
-      v-if="this.$slots.header"
-      :class="isMediaElementHeader ? 'b-card--header--media' : 'b-card--header'"
-    >
-      <slot name="header" />
-    </div>
-    <div class="b-card--body">
-      <slot />
-    </div>
-    <div v-if="this.$slots.footer" class="b-card--footer">
-      <slot name="footer" />
-    </div>
-  </div>
-</template>
-
 <script>
 // helpers
 import { convertToUnit, isMediaElement } from '../utils/helpers'
@@ -31,7 +13,6 @@ export default {
 
   props: {
     width: { type: Number, default: 320 },
-    backgroundColor: { type: String | Number, default: undefined },
     tile: { type: Boolean, default: false }
   },
 
@@ -60,6 +41,33 @@ export default {
 
   methods: {
     isMediaElement
+  },
+
+  render () {
+    const data = {
+      class: {
+        ...this.classes
+      },
+      style: {
+        ...this.styles
+      }
+    }
+    this.setBackgroundColor(this.backgroundColor, data)
+    return (
+      <div
+        class={data.class}
+        style={data.style}
+      >
+        <div class={this.isMediaElementHeader ? 'b-card--header--media' : 'b-card--header'}>
+          {this.$slots.header}
+        </div>
+        <div class="b-card--body">
+          {this.$slots.default}
+        </div>
+        <div class="b-card--footer">
+          {this.$slots.footer}
+        </div>
+      </div>)
   }
 }
 </script>

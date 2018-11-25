@@ -1,12 +1,24 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/env",
       {
+        "targets": {
+          "browsers": [
+            ">0.5%",
+            "last 2 versions",
+            "not dead",
+            "not op_mini all"
+          ],
+          "node": 8
+        },
         "modules": false
       }
-    ],
-    "stage-3"
+    ]
   ],
-  "plugins": ["transform-object-rest-spread"]
+  "plugins": [
+    "transform-vue-jsx",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-object-rest-spread"
+  ]
 }

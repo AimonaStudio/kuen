@@ -34,16 +34,13 @@ export default {
       main: true,
       browser: true
     }),
-    commonjs(),
-    stylus(),
-    vue(),
     babel({
       exclude: 'node_modules/**',
-      runtimeHelpers: true,
-      plugins: [
-        'external-helpers'
-      ]
-    })
+      runtimeHelpers: true
+    }),
+    commonjs(),
+    stylus(),
+    vue()
   ],
   watch: {
     include: 'src/**'

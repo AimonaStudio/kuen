@@ -33,10 +33,10 @@ export default {
       return classes
     },
     styles () {
-      const style = this.setBackgroundColor(this.color, {
+      const style = {
         'height': convertToUnit(this.size),
         'width': convertToUnit(this.size)
-      })
+      }
 
       return style
     }
@@ -52,6 +52,7 @@ export default {
     flex-direction: column
     justify-content: center
     color: $white
+
     &--disabled {
       opacity: 0.65;
       cursor: not-allowed;
