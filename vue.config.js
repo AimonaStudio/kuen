@@ -3,7 +3,7 @@
 module.exports = {
   pages: {
     index: {
-      entry: './dev/index.js'
+      entry: './dev/index.test.js'
     }
   }
 }

@@ -5,6 +5,10 @@
   "description": "Bread's Frontend Framework",
   "scripts": {
     "lint": "eslint ./backpacks --ext .vue,.js",
+    "test": "node build/run-tests.js",
+    "test:unix": "cross-env NODE_ENV=test jest",
+    "test:win32": "cross-env NODE_ENV=test jest -i",
+    "test:coverage": "yarn test --coverage",
     "dev": "vue-cli-service serve --open",
     "docs:dev": "vuepress dev docs --port 3005",
     "docs:build": "vuepress build docs"
@@ -24,13 +28,16 @@
   "homepage": "https://himself65.github.io/kuen",
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@types/jest": "^23.3.9",
     "@types/node": "^10.11.3",
     "@types/vue": "^2.0.0",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-plugin-unit-jest": "^3.1.1",
     "@vue/cli-service": "^3.0.4",
     "avoriaz": "^6.3.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.7.0",

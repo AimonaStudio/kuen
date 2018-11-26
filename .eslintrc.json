@@ -5,6 +5,7 @@
   },
   "extends": [
     "standard",
+    "eslint:recommended",
     "plugin:vue/recommended"
   ],
   "rules": {
