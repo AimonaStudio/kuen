@@ -1,0 +1,72 @@
+@import "../stylus/settings/_variables.styl"
+@import "../stylus/settings/_elevations.styl"
+@import "../stylus/generic/_theme.styl"
+
+b-button($template)
+  background-color: $template.background
+  border-color: $template.background
+  color: $template.text.primary
+
+theme(b-button, "b-button")
+.b-button {
+  display inline-flex
+  align-items center
+  text-align center
+  line-height 1
+  white-space nowrap
+  height 2.5rem
+  outline none
+  padding 0 .8rem
+  border 1px solid
+  cursor pointer
+  font-weight 500
+  font-size 1rem
+  min-width 5rem
+  vertical-align middle
+  width inherit
+
+  &--body {
+    align-items center
+    border-radius inherit
+    justify-content center
+    color inherit
+    display flex
+    flex 1 0 auto
+    margin 0 auto
+  }
+
+  &--small {
+    font-size .8rem
+    height 2rem
+  }
+
+  &--large {
+    font-size 1.2rem
+    height 3rem
+  }
+
+  &--round {
+    border-radius 1.5rem
+  }
+
+  &--disabled {
+    opacity 0.65
+    cursor not-allowed
+  }
+
+  &--block {
+    display: flex
+    flex: 1
+    margin: .8rem 0
+    width: 100%
+  }
+
+  &:not(.b-button--flat) {
+    will-change box-shadow
+    elevation(2)
+  }
+
+  &--flat {
+    elevation(0)
+  }
+}
