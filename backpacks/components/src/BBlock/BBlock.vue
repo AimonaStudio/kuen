@@ -1,35 +1,28 @@
-<template>
-  <div :class="classes" :style="styles">
-    <template>
-      <strong>{{ status }}</strong>
-      <small>
-        <slot class="info" />
-      </small>
-    </template>
-  </div>
-</template>
-
 <script>
 import { convertToUnit } from '../utils/helpers'
 import Colorable from '../mixins/colorable'
+import Themeable from '../mixins/themeable'
 
 export default {
   name: 'BBlock',
-  mixins: [Colorable],
+  mixins: [Colorable, Themeable],
 
   props: {
     size: { type: Number, default: 90 },
     disabled: { type: Boolean, default: false },
-    status: { type: String, default: '' }
+    status: { type: String, default: '' },
+    tile: { type: Boolean, default: true }
   },
   computed: {
     classes () {
-      const classes = this.setBackgroundColor(this.color, {
+      const classes = {
+        ...this.themeClasses,
         'b-block': true,
         'b-block--disabled': this.disabled,
-        'status': true // todo: merge status color to common colors like 'light', 'dark' .etc
-      })
-      this.setBackgroundColor(this.color, classes)
+        'b-block--tile': this.tile,
+        'status': true
+      }
+
       return classes
     },
     styles () {
@@ -40,30 +33,33 @@ export default {
 
       return style
     }
+  },
+  render () {
+    const data = {
+      class: {
+        ...this.classes
+      },
+      style: {
+        ...this.styles
+      }
+    }
+    this.setBackgroundColor(this.color, data)
+    return (
+      <div
+        class={data.class}
+        style={data.style}>
+        <strong>
+          {this.status}
+        </strong>
+        <small>
+          <div class="info">
+            {this.$slots.default}
+          </div>
+        </small>
+      </div>
+    )
   }
 }
 </script>
 
-<style lang="stylus" scoped>
-  @import "../stylus/settings/_colors.styl"
-
-  .b-block {
-    display: flex
-    flex-direction: column
-    justify-content: center
-    color: $white
-
-    &--disabled {
-      opacity: 0.65;
-      cursor: not-allowed;
-    }
-
-    strong {
-      font-size: 1.3rem
-    }
-
-    small {
-      font-size: .7rem
-    }
-  }
-</style>
+<style lang="stylus" src="./BBlock.styl"></style>

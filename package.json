@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Bread's Frontend Framework",
   "scripts": {
-    "lint": "eslint src --ext .ts,.js",
+    "lint": "eslint ./backpacks --ext .vue,.js",
     "dev": "vue-cli-service serve --open",
     "docs:dev": "vuepress dev docs --port 3005",
     "docs:build": "vuepress build docs"

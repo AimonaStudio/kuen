@@ -1,0 +1,37 @@
+@import "../stylus/settings/_variables.styl"
+@import "../stylus/settings/_elevations.styl"
+@import "../stylus/generic/_theme.styl"
+
+b-block($template)
+  background-color: $template.background
+  border-color: $template.background
+  color: $template.text.theme
+
+theme(b-block, "b-block")
+
+
+.b-block {
+  display flex
+  flex-direction column
+  justify-content center
+  text-align center
+  border-radius $border-radius-default
+  elevation(1)
+
+  &--disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+
+  &--tile {
+    border-radius 0
+  }
+
+  strong {
+    font-size: 1.3rem
+  }
+
+  small {
+    font-size: .7rem
+  }
+}

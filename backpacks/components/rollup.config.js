@@ -5,6 +5,7 @@ import stylus from 'rollup-plugin-stylus'
 import vue from 'rollup-plugin-vue'
 import pkg from './package.json'
 
+/*
 const dev = 'development'
 const prod = 'production'
 
@@ -16,6 +17,7 @@ function parseNodeEnv (nodeEnv) {
 }
 
 const nodeEnv = parseNodeEnv(process.env.NODE_ENV)
+*/
 
 export default {
   input: pkg.source,
