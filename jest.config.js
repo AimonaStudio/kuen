@@ -1,8 +1,9 @@
 module.exports = {
   verbose: false,
   roots: [
-    '<rootDir>/backpacks/',
-    '<rootDir>/test/unit'
+    '<rootDir>/backpacks/components/src',
+    '<rootDir>/backpacks/loader/src',
+    '<rootDir>/tests/unit'
   ],
   moduleFileExtensions: ['js'],
   moduleDirectories: ['node_modules'],

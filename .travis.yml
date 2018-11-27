@@ -2,10 +2,9 @@ language: node_js
 node_js:
   - "11"
 install:
-  - npm install
-  - cd ./backpacks/components && npm install && cd ../../
+  - yarn install
+  - cd ./backpacks/components && yarn install
 script:
   - npm run lint
   - npm run test
-  - npm run docs:build
-  - cd ./backpacks/components && npm run build && cd../../
+  - npm run build
