@@ -5,6 +5,5 @@ install:
   - yarn install
   - cd ./backpacks/components && yarn install
 script:
-  - npm run lint
   - npm run test
   - npm run build
