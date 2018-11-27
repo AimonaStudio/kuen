@@ -22,12 +22,26 @@ yarn add kuen
 
 ## Usage
 
-```javascript
+```bash
+# install
+yarn add --dev @kuen/components
+yarn add --dev @kuen/loader
+```
+
+```js
+// only install components
 import Vue from 'vue'
-import Kuen from 'kuen'
+import Kuen from '@kuen/components'
 
 Vue.use(Kuen)
+
+
+// or install app
+import StarkApp from '@kuen/loader'
+
+StarkApp(...args)
 ```
+
 
 
 ### LICENSE
