@@ -5,8 +5,8 @@
   "description": "Bread's Frontend Framework",
   "scripts": {
     "lint": "eslint ./backpacks/*/src/**/* --ext .vue,.js",
-    "build": "concurrently \"yarn components:build \" \" yarn docs:build \"",
-    "components:build": "rimraf backpacks/components/dist && cd backpacks/components && yarn build",
+    "build": "concurrently \"yarn build:components \" \" yarn docs:build \"",
+    "build:components": "rimraf backpacks/components/dist && cd backpacks/components && yarn && yarn build",
     "test": "node build/run-tests.js",
     "test:unix": "cross-env NODE_ENV=test jest",
     "test:win32": "cross-env NODE_ENV=test jest -i",

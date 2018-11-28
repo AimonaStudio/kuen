@@ -1,7 +1,6 @@
 language: node_js
-sudo: required
 node_js:
-  - "11"
+  - "8"
 env:
   - CODECOV_TOKEN="cdbf54ad-128f-4c55-810a-3084cbce00af"
 before_install:
@@ -13,7 +12,6 @@ cache:
     - node_modules
 install:
   - yarn --frozen-lockfile --non-interactive
-  - cd ./backpacks/components && yarn install --frozen-lockfile --non-interactive
 jobs:
   include:
     - stage: test
