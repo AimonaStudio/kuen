@@ -15,6 +15,6 @@ install:
   - yarn install
   - cd ./backpacks/components && yarn install
 script:
-  - yarn run test
-  - yarn run test:coverage
-  - yarn build
+  - npm run test
+  - npm run test:coverage
+  - npm run build
