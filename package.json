@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Bread's Frontend Framework",
   "scripts": {
-    "lint": "eslint ./backpacks/*/src/**/* --ext .vue,.js",
+    "lint": "eslint ./backpacks/*/src/**/*.{js,vue}",
     "build": "concurrently \"yarn build:components \" \" yarn docs:build \"",
     "build:components": "rimraf backpacks/components/dist && cd backpacks/components && yarn && yarn build",
     "test": "node build/run-tests.js",

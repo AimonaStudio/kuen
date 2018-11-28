@@ -20,7 +20,7 @@ jobs:
         - yarn global add codecov
       script:
         - yarn run lint
-        - yarn run test:coverage -- -i
+        - yarn run test:coverage
       after_script:
         - codecov
     - stage: build
