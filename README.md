@@ -1,6 +1,7 @@
 # KUEN - A Frontend Framework
 
 [![Build Status](https://www.travis-ci.com/Himself65/kuen.svg?branch=master)](https://www.travis-ci.com/Himself65/kuen)
+[![codecov](https://codecov.io/gh/Himself65/kuen/branch/master/graph/badge.svg)](https://codecov.io/gh/Himself65/kuen)
 
 KUEN is a useful and beautiful library.
 
