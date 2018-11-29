@@ -12,6 +12,7 @@ theme(b-button, "b-button")
   display inline-flex
   align-items center
   text-align center
+  position relative
   line-height 1
   white-space nowrap
   height 2.5rem
@@ -24,6 +25,19 @@ theme(b-button, "b-button")
   min-width 5rem
   vertical-align middle
   width inherit
+
+  &:before {
+    border-radius inherit
+    color inherit
+    content ''
+    position absolute
+    left 0
+    top 0
+    height 100%
+    opacity 0.12
+    transition $primary-transition
+    width 100%
+  }
 
   &--body {
     align-items center
@@ -68,5 +82,17 @@ theme(b-button, "b-button")
 
   &--flat {
     elevation(0)
+  }
+
+  &--active,
+  &:hover,
+  &:focus {
+    &:not(.b-card--disabled) {
+      position relative
+
+      &:before {
+        background-color currentColor
+      }
+    }
   }
 }

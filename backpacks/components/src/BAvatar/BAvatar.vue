@@ -1,6 +1,6 @@
 <template>
   <div :class="classes" :style="styles">
-    <div />
+    <b-image />
   </div>
 </template>
 
@@ -9,8 +9,12 @@ import { convertToUnit } from '../utils/helpers'
 // mixins
 import Colorable from '../mixins/colorable'
 
+// components
+import BImage from '../BMedia/BImage'
+
 export default {
   name: 'BAvatar',
+  components: [BImage],
   mixins: [Colorable],
 
   props: {
@@ -37,12 +41,4 @@ export default {
 }
 </script>
 
-<style scoped>
-  .b-avatar {
-    border-radius: 50%;
-
-    &--tile {
-
-    }
-  }
-</style>
+<style lang="stylus" src="./BAvatar.styl"></style>
