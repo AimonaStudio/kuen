@@ -2,6 +2,7 @@
 
 [![Build Status](https://www.travis-ci.com/Himself65/kuen.svg?branch=master)](https://www.travis-ci.com/Himself65/kuen)
 [![codecov](https://codecov.io/gh/Himself65/kuen/branch/master/graph/badge.svg)](https://codecov.io/gh/Himself65/kuen)
+[![License](https://img.shields.io/github/license/himself65/kuen.svg)](htttps:://github.com/himself65/kuen)
 
 KUEN is a useful and beautiful library.
 
