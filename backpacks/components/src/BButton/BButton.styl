@@ -26,7 +26,7 @@ theme(b-button, "b-button")
   vertical-align middle
   width inherit
 
-  &:before {
+  &:not(.b-button--disabled)&:before {
     border-radius inherit
     color inherit
     content ''
@@ -87,12 +87,10 @@ theme(b-button, "b-button")
   &--active,
   &:hover,
   &:focus {
-    &:not(.b-card--disabled) {
-      position relative
+    position relative
 
-      &:before {
-        background-color currentColor
-      }
+    &:before {
+      background-color currentColor
     }
   }
 }
