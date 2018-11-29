@@ -30,5 +30,6 @@ module.exports = {
   coverageReporters: ["html", "text-summary"],
   transformIgnorePatterns: [
     'node_modules/(?!vue-router)'
-  ]
+  ],
+  coverageDirectory: "./coverage/"
 }

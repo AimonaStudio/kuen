@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "8"
+notifications:
+  email: false
 env:
   - CODECOV_TOKEN="cdbf54ad-128f-4c55-810a-3084cbce00af"
 before_install:
