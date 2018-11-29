@@ -12,22 +12,6 @@ module.exports = {
       ]
     },
     test: {
-      plugins: [
-        // [
-        //   "module-resolver",
-        //   {
-        //     root: [
-        //       "./backpacks"
-        //     ],
-        //     alias: {
-        //       "~components": "components/src"
-        //     },
-        //     extensions: [
-        //       '', '.vue', '.js', '.json'
-        //     ]
-        //   }
-        // ]
-      ],
       presets: [
         [
           "@babel/env",
