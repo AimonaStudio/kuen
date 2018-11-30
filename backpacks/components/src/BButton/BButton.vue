@@ -1,13 +1,15 @@
 <script>
 import Colorable from '../mixins/colorable'
 import Themeable from '../mixins/themeable'
+import Toggleable from '../mixins/toggleable'
 
 export default {
   name: 'BButton',
 
-  mixins: [Colorable, Themeable],
+  mixins: [Colorable, Themeable, Toggleable('inputValue')],
 
   props: {
+    activeClass: { type: String, default: 'b-button--active' },
     size: { type: String, default: 'medium' },
     round: { type: Boolean, default: true },
     disabled: { type: Boolean, default: false },
@@ -22,6 +24,7 @@ export default {
       return {
         ...this.themeClasses,
         'b-button': true,
+        [this.activeClass]: this.isActive,
         'b-button--round': this.round,
         'b-button--disabled': this.disabled,
         'b-button--flat': this.flat,
