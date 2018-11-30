@@ -5,3 +5,6 @@ dist
 yarn-error.log
 src/dev
 Playground.vue
+
+# ignore .css file compile by WebStrom
+*.css

@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="stylus">
+  @import "../backpacks/components/src/stylus/app.styl"
   @import "../backpacks/components/src/stylus/settings/_theme.styl"
 
   #app {
