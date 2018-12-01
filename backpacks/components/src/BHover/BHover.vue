@@ -2,6 +2,8 @@
 // mixins
 import Toggleable from '../mixins/toggleable'
 
+import isNil from 'lodash/isNil'
+
 export default {
   name: 'BHover',
 
@@ -22,6 +24,7 @@ export default {
   },
 
   methods: {
+    isNil,
     cleanHandle () {
       clearTimeout(this.openTimeout)
       clearTimeout(this.closeTimeout)
@@ -58,7 +61,12 @@ export default {
     if (this.$scopedSlots.default) {
       ele = this.$scopedSlots.default({ hover: this.isActive })
     } else if (this.$slots.default.length > 1) {
-      console.error('ERROR B-Hover should have only one child.', this.$children)
+      console.error(`ERROR ${this.name} should have only one child.`)
+    }
+
+    if (isNil(ele)) {
+      console.error(`ERROR ${this.name} have no child.`)
+      return (<div></div>)
     }
 
     this._g(ele.data, {

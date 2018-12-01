@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
+import postcss from 'rollup-plugin-postcss'
 import stylus from 'rollup-plugin-stylus'
 import vue from 'rollup-plugin-vue'
 import pkg from './package.json'
@@ -43,6 +44,7 @@ export default {
     commonjs({
       include: 'node_modules/**'
     }),
+    postcss(),
     stylus(),
     vue()
   ],
