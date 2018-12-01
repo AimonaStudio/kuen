@@ -14,7 +14,7 @@ import BImage from '../BMedia/BImage'
 
 export default {
   name: 'BAvatar',
-  components: [BImage],
+  components: { BImage },
   mixins: [Colorable],
 
   props: {
