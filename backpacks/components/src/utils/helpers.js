@@ -12,23 +12,6 @@ export function convertToUnit (str, unit = 'px') {
   }
 }
 
-const mediaElementTag = ['img', 'video', 'b-video', 'b-image', 'b-media']
-
-/**
- *
- * @returns {boolean}
- * @param {*} VNodeLike is media element which have 'b-image', 'b-media'.etc
- */
-export function isMediaElement (VNodeLike) {
-  if (!VNodeLike) {
-    return false
-  } else if (isArray(VNodeLike) && VNodeLike.length === 1) {
-    return mediaElementTag.indexOf(VNodeLike[0].tag) !== -1
-  } else {
-    return mediaElementTag.indexOf(VNodeLike.tag) !== -1 // todo
-  }
-}
-
 /**
  *
  * @param {*} value The value to check.

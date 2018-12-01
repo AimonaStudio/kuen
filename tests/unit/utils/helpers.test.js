@@ -1,18 +1,7 @@
 import {
   convertToUnit,
-  isMediaElement,
   onlyOneElement
 } from '../../../backpacks/components/src/utils/helpers'
-
-it('should pass comparison', () => {
-  expect(isMediaElement('')).toBeFalsy()
-
-  expect(isMediaElement([{ tag: 'b-image' }, { tag: 'b-image' }])).toBeFalsy()
-  expect(isMediaElement([{ tag: 'b-image' }])).toBeTruthy()
-
-  expect(isMediaElement({ tag: 'div' })).toBeFalsy()
-  expect(isMediaElement({ tag: 'b-image' })).toBeTruthy()
-})
 
 it('should pass returns the correct value on onlyOneElement', function () {
   expect(onlyOneElement([undefined])).toBeTruthy()
