@@ -1,7 +1,4 @@
 <script>
-// helpers
-import { convertToUnit, isMediaElement } from '../utils/helpers'
-
 // mixins
 import Colorable from '../mixins/colorable'
 import Themeable from '../mixins/themeable'
@@ -12,7 +9,6 @@ export default {
   mixins: [Colorable, Themeable],
 
   props: {
-    width: { type: Number, default: 320 },
     tile: { type: Boolean, default: false }
   },
 
@@ -28,19 +24,10 @@ export default {
     },
 
     styles () {
-      const styles = {
-        'width': convertToUnit(this.width)
+      return {
+
       }
-      return styles
-    },
-
-    isMediaElementHeader () {
-      return isMediaElement(this.$slots.header)
     }
-  },
-
-  methods: {
-    isMediaElement
   },
 
   render () {
@@ -52,18 +39,12 @@ export default {
         ...this.styles
       }
     }
+
     this.setBackgroundColor(this.backgroundColor, data)
+
     return (
       <div {...data}>
-        <div class={this.isMediaElementHeader ? 'b-card--header--media' : 'b-card--header'}>
-          {this.$slots.header}
-        </div>
-        <div class="b-card--body">
-          {this.$slots.default}
-        </div>
-        <div class="b-card--footer">
-          {this.$slots.footer}
-        </div>
+        {this.$slots.default}
       </div>)
   }
 }

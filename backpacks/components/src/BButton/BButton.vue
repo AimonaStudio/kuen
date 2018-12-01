@@ -11,7 +11,7 @@ export default {
     Colorable,
     Themeable,
     Toggleable('inputValue'),
-    Itemable('b-button')
+    Itemable('BButton')
   ],
 
   props: {

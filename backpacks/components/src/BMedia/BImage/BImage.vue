@@ -1,10 +1,11 @@
-<template>
-  <div :class="classes" :style="styles" />
-</template>
-
 <script>
 export default {
   name: 'BImage',
+
+  props: {
+    src: { type: String, default: '' }
+  },
+
   computed: {
     classes () {
       return {
@@ -13,13 +14,27 @@ export default {
     },
     styles () {
       return {
-
+        'background-image': `url(${this.src})`
       }
     }
+  },
+
+  render () {
+    const data = {
+      class: {
+        ...this.classes
+      },
+      style: {
+        ...this.styles
+      }
+    }
+
+    return (
+      <div {...data}>
+      </div>
+    )
   }
 }
 </script>
 
-<style  scoped>
-
-</style>
+<style lang="stylus" src="./BImage.styl"></style>

@@ -1,4 +1,5 @@
 import isString from 'lodash/isString'
+
 export default function (name) {
   const mixin = {
     name: 'itemable'
@@ -16,8 +17,13 @@ export default function (name) {
 
     props: {
       activeClass: { type: String, default: `b-${name}--active` },
-      isActive: { type: Boolean, default: false },
       groupClasses: { type: Object, default: undefined }
+    },
+
+    data () {
+      return {
+        isActive: { type: Boolean, default: false }
+      }
     },
 
     method: {

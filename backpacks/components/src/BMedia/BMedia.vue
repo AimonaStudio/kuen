@@ -1,15 +1,19 @@
-<template>
-  <div :class="classes" :style="styles">
-    <slot />
-  </div>
-</template>
-
 <script>
+import BImage from './BImage'
+import BVideo from './BVideo'
+
 export default {
   name: 'BMedia',
-  props: {
-    type: { type: String, required: true }
+
+  components: {
+    BImage,
+    BVideo
   },
+
+  props: {
+    type: { type: String, default: 'BMedia' }
+  },
+
   computed: {
     classes () {
       return {
@@ -19,6 +23,33 @@ export default {
     styles () {
       return {}
     }
+  },
+
+  render (createElement) {
+    // todo
+
+    const data = {
+      class: {
+        ...this.classes
+      },
+      style: {
+        ...this.styles
+      }
+    }
+    const ele = this.type === 'BMedia'
+      ? (
+        <b-video>
+        </b-video>
+      )
+      : (
+        <b-image>
+        </b-image>
+      )
+    return (
+      <div {...data}>
+        {ele}
+      </div>
+    )
   }
 }
 </script>

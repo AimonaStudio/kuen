@@ -29,26 +29,34 @@ theme(b-card, "b-card")
     flex-wrap nowrap
     align-items center
     padding 16px 20px 16px 20px
-    background-color rgba(0, 0, 0, .03)
     border 0
 
     &--media {
       padding 0
-      border-radius $border-radius-default
       margin 0
+      width 100%
+      position relative
+      border-radius $border-radius-default
 
-      img {
-        border-top-right-radius $border-radius-default
+      .b-el-title {
+        position absolute
+        font-size 1rem
+        margin 1.5rem 1rem
+      }
+
+      > div {
         border-top-left-radius $border-radius-default
-        display inline-block
-        height auto
-        max-width 100%
+        border-top-right-radius $border-radius-default
+        background-color transparent !important
+        background no-repeat center center
+        background-attachment scroll
+        background-size cover
       }
     }
   }
 
   &--footer {
-    padding 16px 20px 16px 20px
+    padding 16px 20px
   }
 
   &--body {
