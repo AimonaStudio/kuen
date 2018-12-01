@@ -45,9 +45,7 @@ export default {
     }
     this.setBackgroundColor(this.color, data)
     return (
-      <div
-        class={data.class}
-        style={data.style}>
+      <div {...data}>
         <strong>
           {this.status}
         </strong>

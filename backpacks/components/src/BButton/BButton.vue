@@ -44,14 +44,12 @@ export default {
       },
       style: {
         ...this.styles
-      }
+      },
+      disabled: this.disable
     }
     this.setBackgroundColor(this.color, data)
-    return (<button
-      disabled={this.disable}
-      class={data.class}
-      style={data.style}
-    >
+
+    return (<button {...data}>
       <div class="b-button--body">
         {this.$slots.default}
       </div>

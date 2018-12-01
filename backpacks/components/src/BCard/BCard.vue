@@ -54,10 +54,7 @@ export default {
     }
     this.setBackgroundColor(this.backgroundColor, data)
     return (
-      <div
-        class={data.class}
-        style={data.style}
-      >
+      <div {...data}>
         <div class={this.isMediaElementHeader ? 'b-card--header--media' : 'b-card--header'}>
           {this.$slots.header}
         </div>
