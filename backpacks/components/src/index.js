@@ -4,36 +4,26 @@ import BBlock from './BBlock'
 import BButton from './BButton'
 import BCard from './BCard'
 import BHover from './BHover'
-import {
-  BMedia,
-  BImage,
-  BVideo
-} from './BMedia'
-import {
-  BProgress,
-  BProgressLinear
-} from './BProgress'
+import BMedia from './BMedia'
+import BProgress from './BProgress'
 import BTag from './BTag'
 
-const components = {
-  BAvatar,
-  BBadge,
-  BBlock,
-  BButton,
-  BCard,
-  BHover,
-  BMedia,
-  BImage,
-  BVideo,
-  BProgress,
-  BProgressLinear,
-  BTag
+const kuenComponents = {
+  ...BAvatar,
+  ...BBadge,
+  ...BBlock,
+  ...BButton,
+  ...BCard,
+  ...BHover,
+  ...BMedia,
+  ...BProgress,
+  ...BTag
 }
 
 const Kuen = {
   install: (Vue, args) => {
-    for (const key in components) {
-      const component = components[key]
+    for (const key in kuenComponents) {
+      const component = kuenComponents[key]
       Vue.component(key, component)
     }
     Vue.use({
@@ -47,4 +37,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default Kuen
-export { Kuen, components }
+export { Kuen, kuenComponents }

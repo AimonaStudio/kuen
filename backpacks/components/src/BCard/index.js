@@ -1,3 +1,7 @@
 import BCard from './BCard.vue'
+import BCardMedia from './BCardMedia'
 
-export default BCard
+export default {
+  BCard,
+  BCardMedia
+}

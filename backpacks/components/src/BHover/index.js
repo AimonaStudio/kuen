@@ -1,3 +1,5 @@
 import BHover from './BHover.vue'
 
-export default BHover
+export default {
+  BHover
+}

@@ -1,3 +1,5 @@
 import BBlock from './BBlock.vue'
 
-export default BBlock
+export default {
+  BBlock
+}

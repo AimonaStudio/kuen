@@ -1,3 +1,5 @@
 import BTag from './BTag.vue'
 
-export default BTag
+export default {
+  BTag
+}
