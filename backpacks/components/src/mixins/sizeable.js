@@ -1,3 +1,5 @@
+import { getSizeKey } from '../utils/componentsUtils'
+
 export default {
   name: 'sizeable',
 
@@ -7,5 +9,7 @@ export default {
     size: { type: [Number, String], default: undefined },
     small: { type: Boolean, default: false },
     xLarge: { type: Boolean, default: false }
-  }
+  },
+
+  method: { getSizeKey }
 }
