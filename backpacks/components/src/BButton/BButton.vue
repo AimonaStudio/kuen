@@ -30,7 +30,6 @@ export default {
 
   computed: {
     classes () {
-      const sizeClass = {}
       return {
         ...this.themeClasses,
         [this.classSize]: convertToUnit(this.size),
