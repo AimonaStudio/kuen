@@ -3,11 +3,11 @@
   "extends": "tslint-config-standard",
   "linterOptions": {
     "include": [
-      "./src/**/*.ts"
+      "backpacks/**/*.ts"
     ],
     "exclude": [
-      "**/*.spec.js",
-      "./node_modules/**/*"
+      "**/*.test.js",
+      "node_modules/**/*"
     ]
   },
   "rules": {
