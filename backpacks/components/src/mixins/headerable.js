@@ -1,5 +1,5 @@
 export default {
-  name: 'titleable',
+  name: 'headerable',
   props: {
     titleColor: { type: String, default: 'white' },
     titleType: { type: String, default: 'medium' },
