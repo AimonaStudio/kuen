@@ -1,6 +1,5 @@
-@import "../stylus/settings/_variables.styl"
-@import "../stylus/settings/_elevations.styl"
-@import "../stylus/generic/_theme.styl"
+@import "../setting.styl"
+@import "../theme.styl"
 
 b-button($template)
   background-color: $template.background
@@ -19,11 +18,14 @@ theme(b-button, "b-button")
   width inherit
   outline none
   padding 0 .8rem
-  border 1px solid
+  border 0
   cursor pointer
-  font-weight 500
   min-width 5rem
   vertical-align middle
+
+  //default-setting
+  font-size 1rem
+  height 2.5rem
 
   &:not(.b-button--disabled)&:before {
     border-radius inherit

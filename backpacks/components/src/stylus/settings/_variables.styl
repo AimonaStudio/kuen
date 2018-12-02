@@ -1,3 +1,4 @@
+// variable
 $color-pack := true
 
 // based on: https://github.com/vuetifyjs/vuetify
@@ -27,3 +28,12 @@ $display-breakpoints := {
 $border-radius-default = .25rem
 
 $primary-transition = 200ms ease-in-out
+
+$primary-padding = 1rem
+$secondary-padding = 1.5rem
+
+// setter
+//
+// padding: 1.5rem 1rem;
+set-padding($vertical = $secondary-padding, $horizontal = $primary-padding)
+  padding $horizontal $vertical

@@ -1,0 +1,13 @@
+@import "../setting.styl"
+@import "../theme.styl"
+
+intro-header($template)
+  color: $template.text.primary
+
+theme(intro-header, 'intro-header')
+
+.intro-header {
+  h1 {
+    set-padding($secondary-padding, 0)
+  }
+}

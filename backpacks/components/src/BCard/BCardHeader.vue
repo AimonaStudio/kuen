@@ -16,6 +16,10 @@ export default {
     console.log()
   },
   render (_, { data, props, children }) {
+    const isShadow = {
+      'elevation--text-1': props.titleShadow
+    }
+
     if (props.src) {
       // todo: Please simplify the code here
       const mediaSize = (() => {
@@ -23,13 +27,13 @@ export default {
           return { 'padding-bottom': `${val}` }
         }
         if (props.xLarge) {
-          return handle('100%')
-        } else if (props.large) {
           return handle('calc(2/3*100%)')
-        } else if (props.medium) {
+        } else if (props.large) {
           return handle('calc(1/3*100%)')
-        } else if (props.small) {
+        } else if (props.medium) {
           return handle('calc(1/5*100%)')
+        } else if (props.small) {
+          return handle('calc(1/7*100%)')
         } else {
           return handle(convertToUnit(props.size))
         }
@@ -48,10 +52,6 @@ export default {
         [`text--${colorModifier}`]: true
       }
 
-      const isShadow = {
-        'elevation--text-1': props.titleShadow
-      }
-
       return (
         <div class="b-card--header--media">
           <div style={style}>
@@ -65,14 +65,12 @@ export default {
       const data = {
         style: {},
         class: {
-          'b-card-header': true
+          'b-card--header': true
         }
       }
       return (
-        <div
-          {...data}
-        >
-          {children}
+        <div {...data}>
+          <h1 class={isShadow}>{props.title}</h1>
         </div>
       )
     }

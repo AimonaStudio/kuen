@@ -1,6 +1,5 @@
-@import "../stylus/settings/_variables.styl"
-@import "../stylus/settings/_elevations.styl"
-@import "../stylus/generic/_theme.styl"
+@import "../setting.styl"
+@import "../theme.styl"
 
 b-card($template)
   background-color: $template.cards
@@ -13,8 +12,8 @@ theme(b-card, "b-card")
   display flex
   flex-direction column
   flex-wrap nowrap
-  padding 0
-  margin 0 16px 0 16px
+  set-padding(0, 0)
+  margin 0 $primary-padding
   border-radius $border-radius-default
   text-align left
   elevation(1)
@@ -24,14 +23,18 @@ theme(b-card, "b-card")
   }
 
   &--header {
+    @extends .intro-header
+
     display flex
     flex-direction row
     flex-wrap nowrap
     align-items center
-    padding 16px 20px 16px 20px
+    margin-top .5rem 0
     border 0
 
     &--media {
+      @extends .intro-header
+
       padding 0
       margin 0
       width 100%
@@ -41,7 +44,6 @@ theme(b-card, "b-card")
       .b-el-title {
         position relative
         font-size 1rem
-        margin-left 1.5rem
       }
 
       > div {
@@ -58,11 +60,20 @@ theme(b-card, "b-card")
   }
 
   &--footer {
-    padding 16px 20px
+    set-padding($secondary-padding, $primary-padding)
+    display inline-flex
+
+    :first-child {
+      margin-left 0
+    }
+
+    > * {
+      margin-left .2rem
+    }
   }
 
   &--body {
-    padding 20px
+    set-padding()
     text-align left
   }
 

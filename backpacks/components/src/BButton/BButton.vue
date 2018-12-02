@@ -1,8 +1,13 @@
 <script>
+// mixins
 import Colorable from '../mixins/colorable'
 import Themeable from '../mixins/themeable'
+import Sizeable from '../mixins/sizeable'
 import Toggleable from '../mixins/toggleable'
 import Itemable from '../mixins/itemable'
+
+// helpers
+import { convertToUnit } from '../utils/helpers'
 
 export default {
   name: 'BButton',
@@ -10,38 +15,32 @@ export default {
   mixins: [
     Colorable,
     Themeable,
+    Sizeable,
     Toggleable('inputValue'),
     Itemable('BButton')
   ],
 
   props: {
     disabled: { type: Boolean, default: false },
-    size: {
-      type: String,
-      default: 'medium',
-      validator (val) {
-        return ['small', 'medium', 'large'].indexOf(val) !== -1
-      }
-    },
     submit: { type: Boolean, default: false },
     round: { type: Boolean, default: true },
     flat: { type: Boolean, default: false },
-    block: { type: Boolean, default: false },
-    large: { type: Boolean, default: false },
-    small: { type: Boolean, default: false }
+    block: { type: Boolean, default: false }
   },
 
   computed: {
     classes () {
+      const sizeClass = {}
       return {
         ...this.themeClasses,
-        [this.classSize]: this.size,
+        [this.classSize]: convertToUnit(this.size),
         'b-button': true,
         'b-button--round': this.round,
         'b-button--disabled': this.disabled,
         'b-button--flat': this.flat,
         'b-button--small': this.small,
-        'b-button--large': this.large
+        'b-button--large': this.large,
+        'b-button--medium': this.medium
       }
     },
 
