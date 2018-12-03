@@ -37,4 +37,3 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default Kuen
-export { Kuen, kuenComponents }

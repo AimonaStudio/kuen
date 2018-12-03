@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import '../backpacks/components/src/stylus/app.styl'
-import { Kuen } from '../backpacks/components/src'
+import Kuen from '../backpacks/components/src'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 

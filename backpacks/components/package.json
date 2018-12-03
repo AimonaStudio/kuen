@@ -1,6 +1,6 @@
 {
   "name": "@kuen/components",
-  "version": "0.0.6",
+  "version": "0.0.6-beta.3",
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.cjs.js",
@@ -48,7 +48,6 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
-    "lodash": "^4.17.11",
     "rimraf": "^2.6.2",
     "rollup": "^0.67.3",
     "rollup-plugin-babel": "^4.0.3",
@@ -61,5 +60,8 @@
   },
   "peerDependencies": {
     "vue": "^2.5.17"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
