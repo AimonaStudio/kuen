@@ -3,6 +3,7 @@ import BBadge from './BBadge'
 import BBlock from './BBlock'
 import BButton from './BButton'
 import BCard from './BCard'
+import BContainer from './BContainer'
 import BHover from './BHover'
 import BMedia from './BMedia'
 import BProgress from './BProgress'
@@ -14,6 +15,7 @@ const kuenComponents = {
   ...BBlock,
   ...BButton,
   ...BCard,
+  ...BContainer,
   ...BHover,
   ...BMedia,
   ...BProgress,

@@ -1,0 +1,29 @@
+@import "../stylus/setting.styl"
+@import "../stylus/theme.styl"
+
+b-container($template)
+  background-color: $template.background
+
+theme(b-container, "b-container")
+
+.b-container {
+  display block
+  margin-left 3rem
+  min-height 30rem
+  max-width 40rem
+  margin-top 2rem
+  margin-bottom 2rem
+
+  > * {
+    margin-top 1rem
+  }
+
+  > *:first-child {
+    margin-top: 0
+  }
+
+  @media $display-breakpoints.xs-only {
+    margin-left: auto
+    margin-right: auto
+  }
+}
