@@ -6,10 +6,13 @@ $font-size-default := 14px
 $line-height-default := 1.5
 
 $theme-light = {
+  app: {
+    background: #eee
+  },
   background: #FAFAFA,
-  cards: #FFF,
+  cards: #fff,
   text: {
-    theme: #FFF,
+    theme: #fff,
     primary: rgba(#24292e, .87),
     secondary: rgba(#24292e, .54),
     disabled: rgba(#24292e, .38),
@@ -19,13 +22,16 @@ $theme-light = {
 }
 
 $theme-dark = {
+  app: {
+    background: #323639
+  },
   background: #303030,
   cards: #424242,
   text: {
-    theme: #FFF,
-    primary: #FFF,
-    secondary: rgba(#FFF, .70),
-    disabled: rgba(#FFF, .50),
+    theme: #fff,
+    primary: #fff,
+    secondary: rgba(#fff, .70),
+    disabled: rgba(#fff, .50),
     link: $blue.light,
     link-hover: $grey.light
   },
