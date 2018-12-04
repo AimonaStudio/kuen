@@ -2,8 +2,9 @@
 @import "../stylus/theme.styl"
 
 b-button($template)
-  background-color: $template.background
-  border-color: $template.background
+  &:not(.b-button--icon):not(.b-button--flat)
+    background-color: $template.background !important
+    border-color: $template.background !important
   color: $template.text.primary
 
 theme(b-button, "b-button")
@@ -75,9 +76,6 @@ theme(b-button, "b-button")
   }
 
   &--block {
-    display: flex
-    flex: 1
-    margin: .8rem 0
     width: 100%
   }
 
@@ -87,6 +85,7 @@ theme(b-button, "b-button")
   }
 
   &--flat {
+    background: transparent
     elevation(0)
   }
 

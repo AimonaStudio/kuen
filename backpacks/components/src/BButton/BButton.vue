@@ -23,8 +23,8 @@ export default {
   props: {
     disabled: { type: Boolean, default: false },
     submit: { type: Boolean, default: false },
-    round: { type: Boolean, default: true },
-    flat: { type: Boolean, default: false },
+    round: { type: Boolean, default: false },
+    flat: { type: Boolean, default: true },
     block: { type: Boolean, default: false }
   },
 
@@ -37,6 +37,7 @@ export default {
         'b-button--round': this.round,
         'b-button--disabled': this.disabled,
         'b-button--flat': this.flat,
+        'b-button--block': this.block,
         'b-button--small': this.small,
         'b-button--large': this.large,
         'b-button--medium': this.medium
@@ -52,6 +53,13 @@ export default {
     }
   },
 
+  methods: {
+    click (e) {
+      this.$el.blur()
+      this.$emit('click', e)
+    }
+  },
+
   render () {
     const data = {
       class: {
@@ -61,11 +69,19 @@ export default {
         ...this.styles
       },
       disabled: this.disable,
-      on: this.$listeners,
+      on: {
+        ...this.$listeners,
+        'click': this.click
+      },
       type: this.submit
     }
 
-    this.setBackgroundColor(this.color, data)
+    if (this.flat) {
+      this.setTextColor(this.color || this.backgroundColor, data)
+    } else {
+      this.setBackgroundColor(this.backgroundColor, data)
+      this.setTextColor(this.color, data)
+    }
 
     return (<button {...data}>
       <div class="b-button--body">
