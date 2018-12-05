@@ -2,8 +2,10 @@ import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
-import stylus from 'rollup-plugin-stylus'
+import cssnano from 'cssnano'
 import vue from 'rollup-plugin-vue'
+
+// local config
 import pkg from './package.json'
 
 /*
@@ -32,6 +34,12 @@ export default {
     'lodash'
   ].some(s => id.includes(s)),
   plugins: [
+    postcss({
+      extensions: ['.css', '.styl'],
+      plugins: [
+        cssnano()
+      ]
+    }),
     resolve({
       jsnext: true,
       main: true,
@@ -44,8 +52,6 @@ export default {
     commonjs({
       include: 'node_modules/**'
     }),
-    postcss(),
-    stylus(),
     vue()
   ],
   watch: {
