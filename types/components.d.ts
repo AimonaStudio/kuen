@@ -1,2 +1,5 @@
-export { BCard } from './components/BCard/'
-export { BProgress } from './components/BProgress'
+export * from './components/BButton'
+export * from './components/BCard/'
+export * from './components/BContainer'
+export * from './components/BFooter'
+export * from './components/BProgress/'
