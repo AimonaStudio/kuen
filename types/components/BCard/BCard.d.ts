@@ -9,5 +9,5 @@ export interface CardSlots {
 export declare interface BCard extends Vue {
   tile: boolean
 
-  $slot: CardSlots
+  $slots: CardSlots
 }
