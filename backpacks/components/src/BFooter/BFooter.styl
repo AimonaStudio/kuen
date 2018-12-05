@@ -1,0 +1,32 @@
+@import "../stylus/setting.styl"
+@import "../stylus/theme.styl"
+@import "../stylus/elements.styl"
+
+b-footer($template)
+  background: $template.background
+
+
+theme(b-footer, "b-footer")
+
+.b-footer {
+  position relative
+  margin-left auto
+  margin-right auto
+  box-sizing border-box
+  margin-top 1rem
+  margin-bottom 7rem
+  width 80%
+  height 100%
+
+  text-align center
+  font-size 12px
+  color #99a2aa
+
+  a {
+    color: $blue.base
+    outline none
+    text-decoration none
+    cursor pointer
+    white-space nowrap
+  }
+}
