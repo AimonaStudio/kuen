@@ -6,6 +6,7 @@
   "main": "dist/kuen.cjs.js",
   "module": "dist/kuen.esm.js",
   "style": "dist/kuen.min.css",
+  "types": "types/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
