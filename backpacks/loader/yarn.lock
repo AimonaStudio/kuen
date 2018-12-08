@@ -18,10 +18,25 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@kuen/components@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/@kuen/components/-/components-0.0.3.tgz#5ddfed0da16bc4a2e8b45de7a798e40b92fc4083"
-  integrity sha512-kTfOy0FIzW+Nj1Rfu43NmMOcgZ1PE30VOjQ6zMaDfur4jh5nFZ0DfNm4Mo2FeKYTB+V+Fy71Lr0O+k022CLdfg==
+"@fortawesome/fontawesome-free@^5.1.0":
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.6.0.tgz#7d7624cdb0ef2edd8a91baa193398e6ad16cb21c"
+  integrity sha512-cB426XiX7R421kL8XnTWXlBUzeOYWl63KTUw1wP3fnmNBCuWeLGqglmZGheu0TClBSHZl5HVnKQ0uFFRtn43JQ==
+
+"@kuen/components@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/@kuen/components/-/components-0.0.7.tgz#bd4120abee766d496369918ee856ae845bcecd09"
+  integrity sha512-QEga9RhfNs8L3psAfM1kVPeUGMnJeuzrj1ZKe4FMf3c1j4UuirR72NsL/18DkT8v0xWbM2Tl0TQDzmoWbiErag==
+  dependencies:
+    lodash "^4.17.11"
+    markdown-palettes "^0.4.6-3"
+
+"@luogu-dev/markdown-it-katex@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@luogu-dev/markdown-it-katex/-/markdown-it-katex-0.0.1.tgz#800d3c5a004af6c005ea797393b35670b5d459f2"
+  integrity sha512-KtccRWK2lCPqfl14nsowI+h4zfggarTeAgDdpMuyqJItFt/muoGcbv++PrOPjh2iQhpbMI19LFj+E3DwDyhKqQ==
+  dependencies:
+    katex "^0.9.0"
 
 "@types/node@^10.11.3":
   version "10.12.9"
