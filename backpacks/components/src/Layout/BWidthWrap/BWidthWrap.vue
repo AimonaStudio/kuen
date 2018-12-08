@@ -3,8 +3,8 @@ export default {
   name: 'BWidthWrap',
 
   props: {
-    separation: { type: Number, default: 5 },
-    side: { type: Number, default: 1 }
+    separation: { type: Number, default: 10 },
+    side: { type: Number, default: 4 }
   },
 
   computed: {
@@ -13,6 +13,7 @@ export default {
         'b-width-wrap': true
       }
     },
+
     styles () {
       return {}
     },

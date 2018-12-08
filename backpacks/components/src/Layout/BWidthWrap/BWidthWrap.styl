@@ -1,13 +1,24 @@
 @import "../../stylus/setting.styl"
 
+element-margin()
+  > * {
+    margin-top 1rem
+  }
+
+  > *:first-child {
+    margin-top: 0
+  }
+
 .b-width-wrap {
   display: flex
 
   &--side {
+    element-margin()
     flex: 1 0 auto
   }
 
   &--main {
+    element-margin()
     flex: 4 1 auto
   }
 
