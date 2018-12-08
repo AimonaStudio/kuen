@@ -1,13 +1,39 @@
 @import "../stylus/setting.styl"
 @import "../stylus/theme.styl"
-@import "../stylus/elements.styl"
-
-b-header($template)
-  background: $template.background
-
-
-theme(b-header, "b-header")
 
 .b-header {
+  top: 0
+  position: sticky
+  z-index: 1000
+  height: 3rem
+  background: #303030
+  color: $theme-dark.text.primary
+  display: flex
+  flex-direction: row
+  align-items center
 
+  &--container {
+    margin-left: 1rem
+    margin-right: 1rem
+    display: flex
+    flex-direction: row
+    width: 100%
+
+    .space {
+      flex-grow: 1
+    }
+
+    .logo {
+      font-weight bold
+    }
+
+    ul {
+      margin 0
+      list-style-type: none
+    }
+  }
+
+  @media $display-breakpoints.xs-only {
+    position: relative
+  }
 }

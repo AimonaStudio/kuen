@@ -10,15 +10,14 @@ export default {
     },
 
     styles () {
-      return {
-
-      }
+      return {}
     }
   },
 
   render () {
     return (
-      <div>
+      <div class="b-header">
+        {this.$slots.default}
       </div>
     )
   }

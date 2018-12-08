@@ -5,6 +5,7 @@ import BButton from './BButton'
 import BCard from './BCard'
 import BContainer from './BContainer'
 import BFooter from './BFooter'
+import BHeader from './BHeader'
 import BHover from './BHover'
 import BMedia from './BMedia'
 import BProgress from './BProgress'
@@ -21,6 +22,7 @@ const kuenComponents = {
   ...BCard,
   ...BContainer,
   ...BFooter,
+  ...BHeader,
   ...BHover,
   ...BMedia,
   ...BProgress,
