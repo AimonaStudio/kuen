@@ -2,6 +2,11 @@
 export default {
   name: 'BWidthWrap',
 
+  props: {
+    separation: { type: Number, default: 5 },
+    side: { type: Number, default: 1 }
+  },
+
   computed: {
     classes () {
       return {
@@ -10,6 +15,10 @@ export default {
     },
     styles () {
       return {}
+    },
+
+    mainSide () {
+      return this.separation - this.side
     }
   },
 
@@ -23,13 +32,31 @@ export default {
       }
     }
 
+    const mainData = {
+      class: {
+        'b-width-wrap--main': true
+      },
+      style: {
+        'flex': `${this.mainSide} 1 auto}`
+      }
+    }
+
+    const sideData = {
+      class: {
+        'b-width-wrap--side': true
+      },
+      style: {
+        'flex': `${this.side} 0 auto`
+      }
+    }
+
     return (
       <div {...data}>
-        <div class="b-width-wrap--side">
-          {this.$slots.side}
-        </div>
-        <div class="b-width-wrap--main">
+        <div {...mainData}>
           {this.$slots.main}
+        </div>
+        <div {...sideData}>
+          {this.$slots.side}
         </div>
       </div>
     )
@@ -37,4 +64,4 @@ export default {
 }
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus" src="./BWidthWrap.styl"></style>

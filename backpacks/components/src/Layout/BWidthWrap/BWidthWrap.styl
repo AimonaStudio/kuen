@@ -1,0 +1,25 @@
+@import "../../stylus/setting.styl"
+
+.b-width-wrap {
+  display: flex
+
+  &--side {
+    flex: 1 0 auto
+  }
+
+  &--main {
+    flex: 4 1 auto
+  }
+
+  @media $display-breakpoints.sm-and-down {
+    flex-direction: column-reverse
+
+    &--side {
+      padding: .5rem .2rem
+    }
+
+    &--main {
+      padding: .5rem .2rem
+    }
+  }
+}
