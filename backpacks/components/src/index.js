@@ -4,10 +4,14 @@ import BBlock from './BBlock'
 import BButton from './BButton'
 import BCard from './BCard'
 import BContainer from './BContainer'
+import BFooter from './BFooter'
 import BHover from './BHover'
 import BMedia from './BMedia'
 import BProgress from './BProgress'
 import BTag from './BTag'
+
+// layout part
+import BWidthWrap from './Layout/BWidthWrap'
 
 const kuenComponents = {
   ...BAvatar,
@@ -16,10 +20,13 @@ const kuenComponents = {
   ...BButton,
   ...BCard,
   ...BContainer,
+  ...BFooter,
   ...BHover,
   ...BMedia,
   ...BProgress,
-  ...BTag
+  ...BTag,
+
+  ...BWidthWrap
 }
 
 const Kuen = {
