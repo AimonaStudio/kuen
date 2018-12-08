@@ -4,17 +4,15 @@
 [![codecov](https://codecov.io/gh/Himself65/kuen/branch/master/graph/badge.svg)](https://codecov.io/gh/Himself65/kuen)
 [![License](https://img.shields.io/github/license/himself65/kuen.svg)](htttps:://github.com/himself65/kuen)
 
-**KUEN** is a useful and beautiful library.
+**KUEN** is a useful and beautiful framework.
 
-## Feature
+## Kuen-Core
 
-There have three parts of `kuen`
+- `component`<sup>![version badge](https://version-badge.egoist.sh/npm/@kuen/components)</sup>: the core part of `kuen`.
 
-- `component`: the core part of `kuen`.
+- `loader`<sup>![version badge](https://version-badge.egoist.sh/npm/@kuen/loader)</sup>: extend `vue`.
 
-- `loader`: extend `vue`.
-
-- `util`: function library.
+- `util`<sup>todo</sup>: function library.
 
 ## Installation
 
@@ -43,8 +41,6 @@ import StarkApp from '@kuen/loader'
 
 StarkApp(...args)
 ```
-
-
 
 ### LICENSE
 
