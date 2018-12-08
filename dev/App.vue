@@ -19,6 +19,10 @@ export default {
   @import "../backpacks/components/src/stylus/app.styl"
   @import "../backpacks/components/src/stylus/settings/_theme.styl"
 
+  body {
+    margin 0
+  }
+
   #app {
     font-family $font-size-default
     text-align center

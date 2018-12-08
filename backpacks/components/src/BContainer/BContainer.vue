@@ -5,7 +5,9 @@ import Themeable from '../mixins/themeable'
 
 export default {
   name: 'BContainer',
+
   mixins: [Colorable, Themeable],
+
   computed: {
     classes () {
       return {
@@ -17,6 +19,7 @@ export default {
       return {}
     }
   },
+
   render () {
     const data = {
       class: {

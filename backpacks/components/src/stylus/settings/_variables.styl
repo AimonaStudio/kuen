@@ -29,11 +29,19 @@ $border-radius-default = .25rem
 
 $primary-transition = 200ms ease-in-out
 
-$primary-padding = 1rem
-$secondary-padding = 1.5rem
+$padding = {
+  default: {
+    vertical: 1rem
+    horizontal: 1.5rem
+  },
+  narrow: {
+    vertical: .5rem
+    horizontal: .2rem
+  }
+}
 
 // setter
 //
 // padding: 1.5rem 1rem;
-set-padding($vertical = $secondary-padding, $horizontal = $primary-padding)
+set-padding($vertical = $padding.default.horizontal, $horizontal = $padding.default.vertical)
   padding $horizontal $vertical

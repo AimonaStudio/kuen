@@ -2,13 +2,14 @@
 @import "../stylus/theme.styl"
 
 .b-container {
-  display block
-  margin-left: 3rem
+  display: block
+  min-width: auto
   min-height: 30rem
-  max-width: 40rem
-  margin-top: 2rem
-  margin-bottom: 2rem
-  background: transparent
+  max-width: 80rem
+  margin: 2rem auto
+  padding-left: $padding.default.horizontal
+  padding-right: $padding.default.horizontal
+  background: transparent // this component doesn't need background
 
   > * {
     margin-top 1rem
@@ -21,5 +22,6 @@
   @media $display-breakpoints.xs-only {
     margin-left: auto
     margin-right: auto
+    padding: 0
   }
 }
