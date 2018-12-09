@@ -1,3 +1,5 @@
+import './stylus/app.styl'
+
 import BAvatar from './BAvatar'
 import BBadge from './BBadge'
 import BBlock from './BBlock'
