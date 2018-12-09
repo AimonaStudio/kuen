@@ -1,9 +1,3 @@
-<template>
-  <div :class="classes" :style="styles">
-    <b-image />
-  </div>
-</template>
-
 <script>
 import { convertToUnit } from '../utils/helpers'
 // mixins
@@ -37,6 +31,23 @@ export default {
         'height': size
       }
     }
+  },
+
+  render () {
+    const data = {
+      class: {
+        ...this.classes
+      },
+      style: {
+        ...this.styles
+      }
+    }
+
+    return (
+      <div {...data}>
+        <b-image/>
+      </div>
+    )
   }
 }
 </script>
