@@ -1,6 +1,6 @@
 {
   "name": "@kuen/loader",
-  "version": "0.0.1-alpha-5",
+  "version": "0.0.2-0.1.3-alpha.0.0",
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.cjs.js",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://himself65.github.io/kuen",
   "dependencies": {
-    "@kuen/components": "^0.1.2-beta.4",
+    "@kuen/components": "^0.0.2-0.1.3-alpha.0.0",
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
     "vue": "^2.5.17",
