@@ -27,10 +27,6 @@
   },
   "homepage": "https://himself65.github.io/kuen",
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/plugin-external-helpers": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
     "@types/node": "^10.12.12",
     "@vue/cli-plugin-babel": "^3.2.0",
@@ -39,8 +35,6 @@
     "autoprefixer": "^9.3.1",
     "babel-eslint": "^10.0.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-macros": "^2.4.2",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.7.0",
     "cross-env": "^5.2.0",
@@ -60,6 +54,7 @@
     "vue": "^2.5.17"
   },
   "dependencies": {
+    "@babel/plugin-external-helpers": "^7.2.0",
     "lodash": "^4.17.11",
     "markdown-palettes": "^0.4.6-3"
   }

@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./backpacks/*/src/**/*.{js,vue}",
     "lint-fix": "lint --fix",
-    "build": "concurrently \"lerna run build \" \" yarn docs:build \"",
+    "build": "",
     "test": "node build/run-tests.js",
     "test:unix": "cross-env NODE_ENV=test jest",
     "test:win32": "cross-env NODE_ENV=test jest -i",
