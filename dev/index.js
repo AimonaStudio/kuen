@@ -1,8 +1,8 @@
-import RouterConf from './router'
+import routeConf from './router'
 import App from './App.vue'
 import { startApp } from '../backpacks/loader/src'
 
 startApp({
-  router: RouterConf,
+  routerConf: routeConf,
   appView: App
 })
