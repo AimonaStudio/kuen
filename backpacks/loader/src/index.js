@@ -4,7 +4,7 @@ import { initRouter } from './router'
 import { initStore } from './store'
 import { get, post } from './utils'
 import { KUEN_DEFAULT_THEME } from './utils/shared'
-import '@kuen/components/src/stylus/app.styl'
+import '@kuen/components/dist/kuen.css'
 
 import Appable from './app'
 

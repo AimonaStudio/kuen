@@ -26,7 +26,7 @@
   },
   "homepage": "https://himself65.github.io/kuen",
   "dependencies": {
-    "@kuen/components": "^0.0.2-0.1.3-alpha.0",
+    "@kuen/components": "^0.1.2-beta.4",
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
     "vue": "^2.5.17",
@@ -34,6 +34,7 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/helper-module-imports": "^7.0.0",
     "@types/node": "^10.11.3",
     "@vue/cli-service": "^3.2.0",
     "cross-env": "^5.2.0",
