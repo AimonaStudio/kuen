@@ -4,7 +4,6 @@
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.common.js",
-  "module": "dist/kuen.umd.js",
   "publishConfig": {
     "access": "public"
   },
