@@ -12,6 +12,7 @@ import BHover from './BHover'
 import BMedia from './BMedia'
 import BProgress from './BProgress'
 import BTag from './BTag'
+import BText from './BText'
 
 // layout part
 import BWidthWrap from './Layout/BWidthWrap'
@@ -29,6 +30,7 @@ const kuenComponents = {
   ...BMedia,
   ...BProgress,
   ...BTag,
+  ...BText,
 
   ...BWidthWrap
 }
