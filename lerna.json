@@ -6,7 +6,7 @@
         "master",
         "dev"
       ],
-      "message": "chore(release): publish %s"
+      "message": "BUMP publish %s"
     },
     "version": {
       "push": true
