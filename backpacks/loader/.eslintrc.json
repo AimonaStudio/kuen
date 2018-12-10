@@ -6,8 +6,7 @@
     "sourceType": "module"
   },
   "extends": [
-    "standard",
-    "plugin:vue/recommended"
+    "standard"
   ],
   "rules": {
     "eqeqeq": [
@@ -17,18 +16,6 @@
         "null": "ignore"
       }
     ],
-    "no-unused-vars": "warn",
-    "vue/max-attributes-per-line": ["error", {
-      "singleline": 3,
-      "multiline": {
-        "max": 3,
-        "allowFirstLine": false
-      }
-    }],
-    "vue/html-closing-bracket-spacing": "error",
-    "vue/html-closing-bracket-newline": ["error", {
-      "singleline": "never",
-      "multiline": "always"
-    }]
+    "no-unused-vars": "warn"
   }
 }

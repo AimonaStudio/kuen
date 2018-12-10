@@ -9,7 +9,8 @@
     "access": "public"
   },
   "scripts": {
-    "eslint": "eslint src --ext .ts,.js,.vue"
+    "eslint": "eslint src --ext .ts,.js,.vue",
+    "build": "rimraf dist && cross-env vue-cli-service build --target lib --name kuen src/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,12 +27,15 @@
   "homepage": "https://himself65.github.io/kuen",
   "dependencies": {
     "@kuen/components": "^0.1.2-beta.4",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^10.11.3",
+    "@vue/cli-service": "^3.2.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.6.1",
     "eslint-config-standard": "^12.0.0",
