@@ -3,8 +3,8 @@
   "version": "0.0.2-0.1.3-alpha.0",
   "description": "",
   "source": "src/index.js",
-  "main": "dist/kuen.cjs.js",
-  "module": "dist/kuen.esm.js",
+  "main": "dist/kuen.common.js",
+  "module": "dist/kuen.umd.js",
   "publishConfig": {
     "access": "public"
   },
