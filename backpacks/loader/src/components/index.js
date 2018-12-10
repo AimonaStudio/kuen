@@ -1,12 +1,9 @@
-// eslint-disable-next-line
 import Vue from 'vue'
+import Kuen from '@kuen/components'
 
-const initComponents = (Vue) => {
-  const components = require('@kuen/components')
-  for (const key in components) {
-    const component = components[key]
-    Vue.component(key, component)
-  }
+const initComponents = () => {
+  console.log(Kuen)
+  Vue.use(Kuen)
 }
 
 export { initComponents }

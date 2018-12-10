@@ -1,5 +1,3 @@
-import VueRouter from 'vue-router'
-
 const component1 = {
   template: `<div class="title">Page 1</div>`
 }
@@ -7,7 +5,7 @@ const component2 = {
   template: `<div class="title">Page 2</div>`
 }
 
-const router = new VueRouter({
+const config = {
   routes: [
     {
       path: '/page1',
@@ -21,6 +19,6 @@ const router = new VueRouter({
     },
     { path: '*', redirect: '/page1' }
   ]
-})
+}
 
-export default router
+export default config

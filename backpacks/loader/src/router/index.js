@@ -4,8 +4,10 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const initRoute = async () => {
-  // todo
+const initRouter = async (conf) => {
+  return new VueRouter({
+    ...conf
+  })
 }
 
-export { initRoute }
+export { initRouter }

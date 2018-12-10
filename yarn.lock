@@ -1424,14 +1424,6 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@kuen/components@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@kuen/components/-/components-0.0.7.tgz#bd4120abee766d496369918ee856ae845bcecd09"
-  integrity sha512-QEga9RhfNs8L3psAfM1kVPeUGMnJeuzrj1ZKe4FMf3c1j4UuirR72NsL/18DkT8v0xWbM2Tl0TQDzmoWbiErag==
-  dependencies:
-    lodash "^4.17.11"
-    markdown-palettes "^0.4.6-3"
-
 "@lerna/add@^3.6.0":
   version "3.6.0"
   resolved "https://registry.npmjs.org/@lerna/add/-/add-3.6.0.tgz#eea53efff0b3237774ddac6eaa84957140e89238"

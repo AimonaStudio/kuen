@@ -1,14 +1,13 @@
 // eslint-disable-next-line
 import Vue from 'vue'
 import Vuex from 'vuex'
+
 Vue.use(Vuex)
 
-// todo
-const initStore = async () => {
+const initStore = (conf) => {
   const store = new Vuex.Store({
-
+    ...conf
   })
-
   return store
 }
 
