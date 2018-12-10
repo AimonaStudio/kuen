@@ -4,7 +4,7 @@ export default {
 
   props: {
     separation: { type: Number, default: 10 },
-    side: { type: Number, default: 4 }
+    side: { type: Number, default: 3 }
   },
 
   computed: {
@@ -38,7 +38,7 @@ export default {
         'b-width-wrap--main': true
       },
       style: {
-        'flex': `${this.mainSide} 1 auto}`
+        'flex': `${this.mainSide} 0 auto}`
       }
     }
 
@@ -47,7 +47,7 @@ export default {
         'b-width-wrap--side': true
       },
       style: {
-        'flex': `${this.side} 0 auto`
+        'flex': `${this.side} 1 auto`
       }
     }
 
