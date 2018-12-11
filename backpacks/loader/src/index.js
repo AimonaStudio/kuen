@@ -42,7 +42,9 @@ const startApp = async conf => {
   })
 
   const Kuen = new Vue({
-    name: `Kuen`,
+    el: '#app',
+
+    name: 'Kuen',
 
     mixins: [Appable({
       ...appConf, theme
@@ -55,7 +57,7 @@ const startApp = async conf => {
     render: h => h(conf.appView),
     store,
     router
-  }).$mount(`#${appName}`)
+  })
 
   Kuen.isLoaded || window.addEventListener('load', () => {
     Kuen.isLoaded = true
