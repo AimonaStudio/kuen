@@ -1,6 +1,7 @@
 export default function (conf) {
   const {
     scpNonce = 'himself65',
+    // eslint-disable-next-line
     theme = {}
   } = conf
   return {
