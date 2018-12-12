@@ -35,16 +35,14 @@ const kuenComponents = {
   ...BWidthWrap
 }
 
-const Kuen = {
-  install: (Vue, args) => {
-    for (const key in kuenComponents) {
-      const component = kuenComponents[key]
-      Vue.component(key, component)
-    }
-    Vue.use({
-      ...args
-    })
+const Kuen = (Vue, args) => {
+  for (const key in kuenComponents) {
+    const component = kuenComponents[key]
+    Vue.component(key, component)
   }
+  Vue.use({
+    ...args
+  })
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
