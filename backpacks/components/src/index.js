@@ -35,7 +35,7 @@ const kuenComponents = {
   ...BWidthWrap
 }
 
-const Kuen = (Vue, args) => {
+const Kuen = (Vue, args = {}) => {
   for (const key in kuenComponents) {
     const component = kuenComponents[key]
     Vue.component(key, component)
@@ -46,9 +46,7 @@ const Kuen = (Vue, args) => {
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Kuen)
+  Kuen(window.Vue)
 }
 
-export default Kuen
-
-export { kuenComponents }
+export { Kuen, kuenComponents }
