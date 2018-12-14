@@ -19,29 +19,28 @@ import BText from './BText'
 // layout part
 import BWidthWrap from './Layout/BWidthWrap'
 
-const kuenComponents = {
-  ...BAvatar,
-  ...BBadge,
-  ...BBlock,
-  ...BButton,
-  ...BCard,
-  ...BContainer,
-  ...BFooter,
-  ...BHeader,
-  ...BHover,
-  ...BMedia,
-  ...BProgress,
-  ...BTag,
-  ...BText,
+const kuenComponents = [
+  BAvatar,
+  BBadge,
+  BBlock,
+  BButton,
+  BCard,
+  BContainer,
+  BFooter,
+  BHeader,
+  BHover,
+  BMedia,
+  BProgress,
+  BTag,
+  BText,
 
-  ...BWidthWrap
-}
+  BWidthWrap
+]
 
 const install = (Vue, opt = {}) => {
-  for (const key in kuenComponents) {
-    const component = kuenComponents[key]
-    Vue.component(component.name, component)
-  }
+  Object.values(kuenComponents).forEach(component => {
+    Vue.use(component)
+  })
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

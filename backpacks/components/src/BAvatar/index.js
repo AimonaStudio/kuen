@@ -1,5 +1,5 @@
 import BAvatar from './BAvatar.vue'
 
-export default {
-  BAvatar
+export default Vue => {
+  Vue.component(BAvatar.name, BAvatar)
 }

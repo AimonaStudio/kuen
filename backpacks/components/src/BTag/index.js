@@ -1,5 +1,5 @@
 import BTag from './BTag.vue'
 
-export default {
-  BTag
+export default Vue => {
+  Vue.component(BTag.name, BTag)
 }

@@ -1,5 +1,5 @@
 import BFooter from './BFooter.vue'
 
-export default {
-  BFooter
+export default Vue => {
+  Vue.component(BFooter.name, BFooter)
 }

@@ -1,5 +1,5 @@
 import BContainer from './BContainer.vue'
 
-export default {
-  BContainer
+export default Vue => {
+  Vue.component(BContainer.name, BContainer)
 }

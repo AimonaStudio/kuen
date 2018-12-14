@@ -1,7 +1,7 @@
 import BProgressLinear from './BProgressLinear.vue'
 import BProgress from './BProgress.vue'
 
-export default {
-  BProgress,
-  BProgressLinear
+export default Vue => {
+  Vue.component(BProgressLinear.name, BProgressLinear)
+  Vue.component(BProgress.name, BProgress)
 }

@@ -1,5 +1,5 @@
 import BText from './BText.vue'
 
-export default {
-  BText
+export default Vue => {
+  Vue.component(BText.name, BText)
 }

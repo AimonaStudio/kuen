@@ -1,5 +1,5 @@
 import BButton from './BButton.vue'
 
-export default {
-  BButton
+export default Vue => {
+  Vue.component(BButton.name, BButton)
 }

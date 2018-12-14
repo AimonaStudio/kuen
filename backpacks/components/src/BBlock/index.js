@@ -1,5 +1,5 @@
 import BBlock from './BBlock.vue'
 
-export default {
-  BBlock
+export default Vue => {
+  Vue.component(BBlock.name, BBlock)
 }

@@ -1,5 +1,5 @@
 import BWidthWrap from './BWidthWrap.vue'
 
-export default {
-  BWidthWrap
+export default Vue => {
+  Vue.component(BWidthWrap.name, BWidthWrap)
 }

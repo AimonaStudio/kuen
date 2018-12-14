@@ -1,5 +1,5 @@
 import BBadge from './BBadge.vue'
 
-export default {
-  BBadge
+export default Vue => {
+  Vue.component(BBadge.name, BBadge)
 }
