@@ -40,7 +40,7 @@ const kuenComponents = {
 const install = (Vue, opt = {}) => {
   for (const key in kuenComponents) {
     const component = kuenComponents[key]
-    Vue.component(key, component)
+    Vue.component(component.name, component)
   }
 }
 
@@ -48,10 +48,8 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-module.exports = {
+export default {
   version: version,
   install,
   ...kuenComponents
 }
-
-module.exports.default = module.exports
