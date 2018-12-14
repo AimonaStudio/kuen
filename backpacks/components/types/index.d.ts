@@ -1,11 +1,11 @@
 import { PluginFunction, VueConstructor } from 'vue'
 
-export * from './components'
+import './components'
 
-declare const Kuen: KuenComponents
+declare const Kuen: Kuen
 export default Kuen
 
-export interface KuenComponents {
+export interface Kuen {
   install: PluginFunction<ComponentsUseOptions>
 }
 

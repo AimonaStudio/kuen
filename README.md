@@ -42,6 +42,10 @@ import StarkApp from '@kuen/loader'
 StarkApp(...args)
 ```
 
+## About
+
+- From v0.0.1, the version number will follow [Semantic Versioning 2.0.0.](https://semver.org/)
+
 ### LICENSE
 
 [LICENSE](LICENSE)
