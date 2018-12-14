@@ -1,14 +1,12 @@
-import { PluginFunction, VueConstructor } from 'vue'
+import Vue, { PluginFunction, VueConstructor } from 'vue'
 
-import './components'
-
-declare const Kuen: Kuen
-export default Kuen
-
-export interface Kuen {
-  install: PluginFunction<ComponentsUseOptions>
+export interface InstallOptions {
+/** todo */
 }
 
-export interface ComponentsUseOptions {
-  // todo
-}
+export const version: string
+
+/** Use `Vue.use(Kuen)` */
+export function install (vue: typeof Vue, options: InstallOptions): void
+
+export * from './components'

@@ -1,3 +1,5 @@
+import { version } from '../package'
+
 import './stylus/app.styl'
 
 import BAvatar from './BAvatar'
@@ -35,22 +37,21 @@ const kuenComponents = {
   ...BWidthWrap
 }
 
-const Kuen = {
-  install: (Vue, args) => {
-    for (const key in kuenComponents) {
-      const component = kuenComponents[key]
-      Vue.component(key, component)
-    }
-    Vue.use({
-      ...args
-    })
+const install = (Vue, opt = {}) => {
+  for (const key in kuenComponents) {
+    const component = kuenComponents[key]
+    Vue.component(key, component)
   }
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Kuen)
+  install(window.Vue)
 }
 
-export default Kuen
+module.exports = {
+  version: version,
+  install,
+  ...kuenComponents
+}
 
-export { kuenComponents }
+module.exports.default = module.exports
