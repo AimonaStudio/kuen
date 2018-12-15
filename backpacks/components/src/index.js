@@ -1,5 +1,3 @@
-import { version } from '../package'
-
 import './stylus/app.styl'
 
 import BAvatar from './BAvatar'
@@ -48,7 +46,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: version,
-  install,
-  ...kuenComponents
+  version: '__VERSION__',
+  install
 }

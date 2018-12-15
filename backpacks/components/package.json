@@ -4,6 +4,7 @@
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.common.js",
+  "module": "dist/kuen.common.js",
   "style": "dist/kuen.css",
   "types": "types/index.d.ts",
   "publishConfig": {
