@@ -1,7 +1,9 @@
+import { genComponentStyles } from './utils/styles'
+
 export default function (conf) {
   const {
     scpNonce = 'himself65',
-    // eslint-disable-next-line
+    components,
     theme = {}
   } = conf
   return {
@@ -30,7 +32,7 @@ export default function (conf) {
     methods: {
       async genTheme () {
         let css
-        // todo
+        const componentsStyle = await genComponentStyles(components, theme)
         return css
       },
 
