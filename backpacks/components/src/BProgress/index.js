@@ -5,3 +5,8 @@ export default Vue => {
   Vue.component(BProgressLinear.name, BProgressLinear)
   Vue.component(BProgress.name, BProgress)
 }
+
+export {
+  BProgressLinear,
+  BProgress
+}

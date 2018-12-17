@@ -7,3 +7,9 @@ export default Vue => {
   Vue.component(BVideo.name, BVideo)
   Vue.component(BMedia.name, BMedia)
 }
+
+export {
+  BImage,
+  BVideo,
+  BMedia
+}

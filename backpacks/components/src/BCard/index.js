@@ -9,3 +9,10 @@ export default Vue => {
   Vue.component(BCardFooter.name, BCardFooter)
   Vue.component(BCardBody.name, BCardBody)
 }
+
+export {
+  BCard,
+  BCardHeader,
+  BCardFooter,
+  BCardBody
+}
