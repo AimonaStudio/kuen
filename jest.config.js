@@ -21,8 +21,9 @@ module.exports = {
     '\\.(styl)$': 'jest-css-modules'
   },
   collectCoverageFrom: [
-    "backpacks/**/*.{js,vue}",
-    "!**/node_modules/**"
+    "backpacks/**/*.{js,ts,vue}",
+    "!**/node_modules/**",
+    "!**/*.d.ts"
   ],
   snapshotSerializers: [
     "jest-serializer-vue"
