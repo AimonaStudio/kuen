@@ -7,7 +7,11 @@ import { startApp } from '../backpacks/loader/src'
 import Kuen from '../backpacks/components/src'
 
 Vue.use(Kuen)
+
 startApp({
   routerConf: routerConf,
-  appView: App
+  appView: App,
+  appConf: {
+    minify: false
+  }
 })

@@ -4,7 +4,8 @@ export default function (conf) {
   const {
     scpNonce = 'himself65',
     components,
-    theme = {}
+    theme,
+    minify
   } = conf
   return {
     name: 'appable',
@@ -31,8 +32,9 @@ export default function (conf) {
 
     methods: {
       async genTheme () {
-        let css
-        const componentsStyle = await genComponentStyles(components, theme)
+        let css = ''
+        const componentsStyle = await genComponentStyles(components, theme, minify)
+        css = `${css} ${componentsStyle}`
         return css
       },
 

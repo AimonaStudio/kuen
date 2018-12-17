@@ -23,7 +23,7 @@ const startApp = async conf => {
       scpNonce: 'himself65'
     },
     methods = {},
-    appName = 'app',
+    appName = 'Kuen',
     theme = KUEN_DEFAULT_THEME,
     globalConf
   } = conf
@@ -44,7 +44,7 @@ const startApp = async conf => {
   const Kuen = new Vue({
     el: '#app',
 
-    name: 'Kuen',
+    name: appName,
 
     mixins: [Appable({
       ...appConf, theme
