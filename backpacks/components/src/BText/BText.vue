@@ -6,7 +6,7 @@ import Themeable from '../mixins/themeable'
 import Colorable from '../mixins/colorable'
 
 export default {
-  name: 'BText',
+  name: 'b-text',
 
   mixins: [Themeable, Colorable],
 

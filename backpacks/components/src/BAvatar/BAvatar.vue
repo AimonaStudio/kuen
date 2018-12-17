@@ -7,7 +7,7 @@ import Colorable from '../mixins/colorable'
 import BImage from '../BMedia/BImage'
 
 export default {
-  name: 'BAvatar',
+  name: 'b-avatar',
   components: { BImage },
   mixins: [Colorable],
 

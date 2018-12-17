@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'BVideo',
+  name: 'b-video',
   computed: {
     classes () {
       return {

@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'BWidthWrap',
+  name: 'b-width-wrap',
 
   props: {
     separation: { type: Number, default: 10 },

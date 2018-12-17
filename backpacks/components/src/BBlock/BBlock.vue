@@ -4,7 +4,7 @@ import Colorable from '../mixins/colorable'
 import Themeable from '../mixins/themeable'
 
 export default {
-  name: 'BBlock',
+  name: 'b-block',
   mixins: [Colorable, Themeable],
 
   props: {

@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'BProgressLinear',
+  name: 'b-progress-linear',
   props: {
     value: { type: Number, required: true },
     color: { type: String, default: 'blue' },

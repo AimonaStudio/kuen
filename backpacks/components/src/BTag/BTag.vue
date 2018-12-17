@@ -9,7 +9,7 @@ import { convertToUnit } from '../utils/helpers'
 import Colorable from '../mixins/colorable'
 
 export default {
-  name: 'BTag',
+  name: 'b-tag',
   mixins: [Colorable],
 
   props: {

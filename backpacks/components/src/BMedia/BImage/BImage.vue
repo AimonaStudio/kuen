@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'BImage',
+  name: 'b-image',
 
   props: {
     src: { type: String, default: '' }

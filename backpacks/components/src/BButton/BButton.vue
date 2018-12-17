@@ -10,7 +10,7 @@ import Itemable from '../mixins/itemable'
 import { convertToUnit } from '../utils/helpers'
 
 export default {
-  name: 'BButton',
+  name: 'b-button',
 
   mixins: [
     Colorable,

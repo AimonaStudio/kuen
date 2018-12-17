@@ -7,7 +7,7 @@ import Headerable from '../mixins/headerable'
 import Sizeable from '../mixins/sizeable'
 
 export default {
-  name: 'BCardHeader',
+  name: 'b-card-header',
   functional: true,
   mixins: [Headerable, Sizeable],
   props: {

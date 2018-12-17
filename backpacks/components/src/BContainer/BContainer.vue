@@ -4,7 +4,7 @@ import Colorable from '../mixins/colorable'
 import Themeable from '../mixins/themeable'
 
 export default {
-  name: 'BContainer',
+  name: 'b-container',
 
   mixins: [Colorable, Themeable],
 

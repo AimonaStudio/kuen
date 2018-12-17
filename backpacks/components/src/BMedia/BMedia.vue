@@ -3,7 +3,7 @@ import BImage from './BImage'
 import BVideo from './BVideo'
 
 export default {
-  name: 'BMedia',
+  name: 'b-media',
 
   components: {
     BImage,

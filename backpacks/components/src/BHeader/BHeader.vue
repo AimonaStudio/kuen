@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'BHeader',
+  name: 'b-header',
 
   computed: {
     classes () {

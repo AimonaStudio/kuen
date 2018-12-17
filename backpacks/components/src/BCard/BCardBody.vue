@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'BCardBody',
+  name: 'b-card-body',
   functional: true,
   render (_, { data, children }) {
     // data.staticClass = 'b-card--body'

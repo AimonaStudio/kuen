@@ -5,7 +5,7 @@ import Toggleable from '../mixins/toggleable'
 import isNil from 'lodash/isNil'
 
 export default {
-  name: 'BHover',
+  name: 'b-hover',
 
   mixins: [Toggleable()],
 

@@ -5,7 +5,7 @@
 
 <script>
 export default {
-  name: 'BProgress'
+  name: 'b-progress'
 }
 </script>
 

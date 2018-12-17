@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'BFooter',
+  name: 'b-footer',
 
   computed: {
     classes () {
