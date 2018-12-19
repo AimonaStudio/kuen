@@ -14,19 +14,15 @@ export default {
 
   computed: {
     classes () {
-      const classes = {
+      return {
         ...this.themeClasses,
         'b-card': true,
         'b-card--tile': this.tile
       }
-
-      return classes
     },
 
     styles () {
-      return {
-
-      }
+      return {}
     }
   },
 

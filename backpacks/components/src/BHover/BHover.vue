@@ -62,6 +62,8 @@ export default {
       ele = this.$scopedSlots.default({ hover: this.isActive })
     } else if (this.$slots.default.length > 1) {
       console.error(`ERROR ${this.name} should have only one child.`)
+    } else {
+      ele = this.$slots.default[0]
     }
 
     if (isNil(ele)) {
