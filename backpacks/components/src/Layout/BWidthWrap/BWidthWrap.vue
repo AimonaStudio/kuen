@@ -16,10 +16,6 @@ export default {
 
     styles () {
       return {}
-    },
-
-    mainSide () {
-      return this.separation - this.side
     }
   },
 
@@ -38,7 +34,7 @@ export default {
         'b-width-wrap--main': true
       },
       style: {
-        'flex': `${this.mainSide} 0 auto}`
+        'flex': `${this.separation - this.side} 0 0`
       }
     }
 
@@ -47,7 +43,7 @@ export default {
         'b-width-wrap--side': true
       },
       style: {
-        'flex': `${this.side} 1 auto`
+        'flex': `${this.side} 1 0`
       }
     }
 
