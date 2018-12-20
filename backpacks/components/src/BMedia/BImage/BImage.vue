@@ -31,6 +31,7 @@ export default {
 
     return (
       <div {...data}>
+        <img src={this.src}/>
       </div>
     )
   }

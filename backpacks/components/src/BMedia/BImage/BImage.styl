@@ -7,7 +7,26 @@ b-image($template)
 theme(b-image, "b-image")
 
 .b-image {
+  width 100%
+  height 100%
+
   background no-repeat center center
   background-attachment scroll
   background-size cover
+
+  &:after {
+    position relative
+    content ''
+    display block
+    width 0
+    height 0
+    visibility hidden
+    clear both
+  }
+
+  img {
+    width 100%
+    height 100%
+    object-fit cover
+  }
 }
