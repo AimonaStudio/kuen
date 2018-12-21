@@ -1,6 +1,6 @@
 {
   "name": "@kuen/loader",
-  "version": "0.1.4-alpha.10",
+  "version": "0.1.5-alpha.0",
   "description": "",
   "author": {
     "name": "Himself65",
@@ -11,7 +11,7 @@
     "eslint": "eslint src --ext .ts,.js,.vue"
   },
   "dependencies": {
-    "@kuen/components": "^0.1.4-alpha.11",
+    "@kuen/components": "^0.1.5-alpha.0",
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
     "vue": "^2.5.17",
