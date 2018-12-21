@@ -40,7 +40,8 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.0.0",
     "postcss-modules": "^1.4.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "vue-meta": "^1.5.8"
   },
   "bugs": {
     "url": "https://github.com/Himself65/kuen/issues"

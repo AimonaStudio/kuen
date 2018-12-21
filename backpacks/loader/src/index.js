@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueMeta from 'vue-meta'
 import { initComponents } from './components'
 import { initRouter } from './router'
 import { initStore } from './store'
@@ -39,7 +40,19 @@ const startApp = async conf => {
     'get': get,
     'post': post,
     ...methods
-  })
+  });
+
+  // todo: abstract a new function
+  // tag: load node packages
+  (() => {
+    Vue.use(VueMeta, {
+      keyName: 'kuenInfo',
+      attribute: 'data-kuen-meta'
+    })
+  })()
+  const mixinData = (app) => {
+    // todo
+  }
 
   const Kuen = new Vue({
     el: '#app',
@@ -50,6 +63,11 @@ const startApp = async conf => {
       ...appConf, theme
     })],
 
+    props: {
+      currentData: { type: Object, default: undefined },
+      currentUser: { type: Object, default: undefined }
+    },
+
     data: () => ({
       isLoaded: document.readyState === 'complete'
     }),
@@ -58,6 +76,8 @@ const startApp = async conf => {
     store,
     router
   })
+
+  mixinData(Kuen)
 
   Kuen.isLoaded || window.addEventListener('load', () => {
     Kuen.isLoaded = true
