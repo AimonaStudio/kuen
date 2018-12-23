@@ -34,8 +34,11 @@ const startApp = async conf => {
     conf: globalConf
   })
 
+  const appView = conf.appView
+
   const store = await initStore(storeConf)
-  const router = await initRouter(routerConf)
+  const router = await initRouter(routerConf, { appView, appName })
+
   await setup({
     'get': get,
     'post': post,
@@ -63,16 +66,11 @@ const startApp = async conf => {
       ...appConf, theme
     })],
 
-    props: {
-      currentData: { type: Object, default: undefined },
-      currentUser: { type: Object, default: undefined }
-    },
-
     data: () => ({
       isLoaded: document.readyState === 'complete'
     }),
 
-    render: h => h(conf.appView),
+    render: h => h(appView),
     store,
     router
   })
