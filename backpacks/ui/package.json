@@ -1,7 +1,14 @@
 {
   "name": "@kuen/ui",
-  "version": "0.1.5-alpha.3",
-  "author": "himself65 <himself6565@gmail.com>",
+  "version": "0.1.5-alpha.2",
+  "description": "",
+  "author": {
+    "name": "Himself65",
+    "email": "Himself6565@gmail.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://himself65.github.io/kuen",
   "license": "MIT",
   "main": "dist/index.js",
