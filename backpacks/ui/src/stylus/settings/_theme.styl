@@ -1,0 +1,43 @@
+@import "_colors.styl"
+
+
+$body-font-family-default := 'Roboto', sans-serif
+$font-size-default := 14px
+$line-height-default := 1.5
+
+$theme-light = {
+  app: {
+    background: #eee
+  },
+  background: #FAFAFA,
+  cards: #fff,
+  text: {
+    theme: #fff,
+    primary: rgba(#000, .87),
+    secondary: rgba(#000, .54),
+    disabled: rgba(#000, .38),
+    link: $blue.dark,
+    link-hover: $grey.darkest
+  }
+}
+
+$theme-dark = {
+  app: {
+    background: #323639
+  },
+  background: #303030,
+  cards: #424242,
+  text: {
+    theme: #000,
+    primary: #fff,
+    secondary: rgba(#fff, .87),
+    disabled: rgba(#fff, .54),
+    link: $blue.light,
+    link-hover: $grey.light
+  },
+}
+
+$theme := {
+  "light": $theme-light,
+  "dark": $theme-dark
+}
