@@ -1,6 +1,6 @@
 {
   "name": "@kuen/components",
-  "version": "0.1.5-alpha.2",
+  "version": "0.1.5-alpha.4",
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.common.js",
