@@ -19,7 +19,7 @@ const stylusLoader = [
 ]
 
 module.exports = {
-  entry: path.resolve(__dirname, './src', 'main.js'),
+  entry: path.resolve(__dirname, './main.js'),
   mode: isProd ? 'production' : 'development',
   output: {
     path: path.resolve(__dirname, './dist'),

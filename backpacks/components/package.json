@@ -55,6 +55,7 @@
     "vue": "^2.5.17"
   },
   "dependencies": {
+    "@kuen/ui": "^0.1.5-alpha.4",
     "lodash": "^4.17.11",
     "markdown-palettes": "^0.4.6-3"
   }
