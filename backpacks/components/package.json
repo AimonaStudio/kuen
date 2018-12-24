@@ -12,7 +12,8 @@
   },
   "scripts": {
     "eslint": "eslint src --ext .ts,.js,.vue",
-    "build": "rimraf dist && cross-env vue-cli-service build --target lib --name kuen src/index.js"
+    "build": "rimraf dist && cross-env vue-cli-service build --target lib --name kuen src/index.js",
+    "inspect": "vue-cli-service inspect"
   },
   "repository": {
     "type": "git",
