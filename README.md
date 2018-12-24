@@ -12,21 +12,20 @@
 
 - `loader`<sup>![version badge](https://version-badge.egoist.sh/npm/@kuen/loader)</sup>: extend `vue`.
 
+- `ui`<sup>![version badge](https://version-badge.egoist.sh/npm/@kuen/ui)</sup>: base core style
+
 - `util`<sup>todo</sup>: function library.
 
 ## Installation
 
 ```bash
-yarn add kuen
+# install
+yarn add @kuen/components
+yarn add @kuen/loader
+yarn add @kuen/ui
 ```
 
 ## Usage
-
-```bash
-# install
-yarn add --dev @kuen/components
-yarn add --dev @kuen/loader
-```
 
 ```js
 // only install components
@@ -36,10 +35,19 @@ import Kuen from '@kuen/components'
 Vue.use(Kuen)
 
 
-// or install app
-import StarkApp from '@kuen/loader'
+// or use loader to build your pwa
+import Vue from 'vue'
+import routerConf from './router'
+import App from './App.vue'
+import { startApp } from '@kuen/loader'
+import Kuen from '@kuen/components'
 
-StarkApp(...args)
+Vue.use(Kuen)
+
+startApp({
+  routerConf: routerConf,
+  appView: App
+})
 ```
 
 ## About
