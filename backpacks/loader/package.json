@@ -33,7 +33,7 @@
     "cross-env": "^5.2.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.7",
-    "eslint": "^5.10.0",
+    "eslint": "^5.11.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
