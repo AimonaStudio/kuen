@@ -1,4 +1,9 @@
 const path = require('path')
+
+// mini
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
+
+// postcss plugins
 const autoprefixer = require('autoprefixer')
 const mqpacker = require('css-mqpacker')
 
@@ -7,6 +12,7 @@ module.exports = {
     config.resolve.alias
       .set('~@', path.resolve(__dirname, 'node_modules'))
     config.resolve.extensions.merge(['.styl'])
+    config.plugin('lodash-webpack-plugin').use(LodashModuleReplacementPlugin)
   },
   css: {
     loaderOptions: {

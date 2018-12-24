@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "rimraf dist && cross-env vue-cli-service build --target lib --name kuen src/index.js",
-    "eslint": "eslint src --ext .ts,.js,.vue"
+    "eslint": "eslint src --ext .ts,.js,.vue",
+    "inspect": "vue-cli-service inspect"
   },
   "dependencies": {
     "@kuen/components": "^0.1.5-alpha.5",
@@ -39,6 +40,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.0.0",
+    "lodash-webpack-plugin": "^0.11.5",
     "postcss-modules": "^1.4.1",
     "rimraf": "^2.6.2",
     "vue-meta": "^1.5.8"
