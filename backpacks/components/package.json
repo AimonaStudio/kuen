@@ -1,6 +1,6 @@
 {
   "name": "@kuen/components",
-  "version": "0.1.5-alpha.4",
+  "version": "0.1.5-alpha.5",
   "description": "",
   "source": "src/index.js",
   "main": "dist/kuen.common.js",
@@ -55,7 +55,7 @@
     "vue": "^2.5.17"
   },
   "dependencies": {
-    "@kuen/ui": "^0.1.5-alpha.4",
+    "@kuen/ui": "^0.1.5-alpha.5",
     "lodash": "^4.17.11",
     "markdown-palettes": "^0.4.6-3"
   }
