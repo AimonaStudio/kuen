@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - "8"
+os:
+  - osx
+  - linux
+  - windows
 notifications:
   email: false
 before_install:
@@ -20,6 +24,7 @@ jobs:
         - yarn global add codecov
       script:
         - yarn run lint
+        - yarn run test
         - yarn run test:coverage
       after_success:
         - codecov
