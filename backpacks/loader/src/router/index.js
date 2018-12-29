@@ -14,16 +14,16 @@ const initRouter = async (conf, { appView, appName }) => {
   })
 
   // hooks
-  router.beforeEach(async (to, from, next) => {
-    const data = get(to.fullPath, to.query,
-      {
-        headers: {
-          [`X-${appName}-Type`]: 'json-only'
-        }
-      })
-
-    await updateAppData(appView, data)
-  })
+  // router.beforeEach(async (to, from, next) => {
+  //   const data = get(to.fullPath, to.query,
+  //     {
+  //       headers: {
+  //         [`X-${appName}-Type`]: 'json-only'
+  //       }
+  //     })
+  //
+  //   await updateAppData(appView, data)
+  // })
 
   return router
 }
